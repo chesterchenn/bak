@@ -1,0 +1,2 @@
+colorscheme desert
+set visualbell
