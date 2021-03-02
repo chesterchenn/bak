@@ -1,5 +1,8 @@
+" 增加吸血鬼主题
+packadd! dracula
+
 " 设置主题
-colorscheme desert 
+colorscheme dracula
 
 " 出错时，禁用响声
 set noerrorbells
@@ -11,7 +14,7 @@ set visualbell
 set number
 
 " 打开语法高亮
-syntax on
+syntax enable
 
 " 显示当前键入的指令
 set showcmd
