@@ -75,6 +75,16 @@ module.exports = {
     // 禁止重新分配 const 变量
     'no-const-assign': 'error',
 
-  },
+    // 单行块内需要间隔
+    'block-spacing': ['error', 'always'],
 
+    // 文件尾换行，不允许多行
+    'eol-last': ['error', 'always'],
+
+    // 禁止行尾空格，包括空行以及注释
+    'no-trailing-spaces': ['error', {
+      skipBlankLines: false,
+      ignoreComments: false,
+    }],
+  },
 };
