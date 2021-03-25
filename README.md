@@ -4,6 +4,7 @@
   - .vimrc
   - .zshrc
   - .eslintrc.js
+  - .eslintrc.react.js
 
 ## vim
 安装主题，安装位置
