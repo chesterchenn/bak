@@ -104,7 +104,7 @@ alias ll='ls -alF'
 
 # Need to install proxychains
 # see https://github.com/haad/proxychains
-alias pc="proxychains"
+alias pc="proxychains4"
 
 # Install Ruby Gems to ~/gems
 export GEM_HOME="$HOME/gems"
@@ -117,7 +117,7 @@ unsetopt beep
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-    alias dir='dir --color=auto'
+    #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 
     alias grep='grep --color=auto'
@@ -125,3 +125,5 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+# set yarn global
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
