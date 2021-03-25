@@ -3,6 +3,7 @@
 ## 备份列表
   - .vimrc
   - .zshrc
+  - .eslintrc.js
 
 ## vim
 安装主题，安装位置
