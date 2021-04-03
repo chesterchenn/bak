@@ -5,7 +5,6 @@
   - .zshrc
   - .eslintrc.js
   - .eslintrc.react.js
-  - hosts
 
 ## vim
 安装主题，安装位置
