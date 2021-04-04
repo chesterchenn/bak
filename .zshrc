@@ -105,6 +105,10 @@ alias ll='ls -alF'
 # Need to install proxychains4
 # see https://github.com/rofl0r/proxychains-ng
 alias pc="proxychains4"
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
 
 # Install Ruby Gems to ~/gems
 export GEM_HOME="$HOME/gems"
@@ -112,18 +116,6 @@ export PATH="$HOME/gems/bin:$PATH"
 
 # mute system
 unsetopt beep
-
-# enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
-
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
-fi
 
 # set yarn global
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
