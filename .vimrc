@@ -7,9 +7,6 @@ colorscheme dracula
 " 出错时，禁用响声
 set noerrorbells
 
-" 出错时，发出视觉提示
-set visualbell     
-
 " 开启行号
 set number
 
@@ -18,3 +15,18 @@ syntax enable
 
 " 显示当前键入的指令
 set showcmd
+
+" 智能缩进
+set smartindent 
+
+" 缩进 
+set shiftwidth=2
+
+" 设置自动补全
+"inoremap ( ()<ESC>i
+"inoremap [ []<ESC>i
+"inoremap { {}<ESC>i
+"inoremap < <><ESC>i
+"inoremap ' ''<ESC>i
+"inoremap " ""<ESC>i
+
