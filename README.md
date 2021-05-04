@@ -1,8 +1,8 @@
 仅仅用于个人备份
 
 ## 备份列表
-  - .vimrc
-  - .zshrc
+  - vimrc
+  - zshrc
   - .eslintrc.js
   - .eslintrc.react.js
 
@@ -12,7 +12,10 @@
 - .vim/pack/*/opt/   (手动加载)
 
 主题列表
-- [dracula](https://github.com/dracula/vim)
+- [dracula/vim](https://github.com/dracula/vim)
 
 ## zsh
 配合 [oh my zsh](https://github.com/ohmyzsh/ohmyzsh) 使用
+
+主题列表
+- [dracula/zsh](https://github.com/dracula/zsh)
