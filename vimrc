@@ -10,6 +10,9 @@ set noerrorbells
 " 开启行号
 set number
 
+" 使用相对行号
+set relativenumber
+
 " 打开语法高亮
 syntax enable
 
@@ -17,13 +20,22 @@ syntax enable
 set showcmd
 
 " 智能缩进
-set smartindent 
+set smartindent
 
-" 缩进 
+" 缩进
 set shiftwidth=2
 
 " 高亮当前行
 set cursorline
+
+" 设置光标上下最少行数
+set scrolloff=3
+
+" 设置光标滚动滑动行数
+set scrolljump=3
+
+" 设置边输入边搜索
+set incsearch
 
 " coc 配置
 " coc - 使用 TAB 选择
@@ -51,8 +63,14 @@ let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-explorer']
 " coc - coc-explorer 插件的快捷键
 :nnoremap <space>e :CocCommand explorer<CR>
 
+" airline - 开启tab
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+
 " 使用 vim plug 插件
 call plug#begin()
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'vim-airline/vim-airline'
+  Plug 'powerline/powerline'
 call plug#end()
 
