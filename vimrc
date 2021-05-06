@@ -4,6 +4,9 @@ packadd! dracula
 " 设置主题
 colorscheme dracula
 
+" 取消 vi 兼容模式
+set nocompatible
+
 " 出错时，禁用响声
 set noerrorbells
 
@@ -38,9 +41,7 @@ set scrolljump=3
 set incsearch
 
 " 修复 wsl 终端下总是以 REPLACE 模式启动 vim
-if $TERM =~ 'xterm-256color'
-  set noek
-endif
+nnoremap <esc>^[ <esc>^[
 
 " coc 配置
 " coc - 使用 TAB 选择
