@@ -37,6 +37,11 @@ set scrolljump=3
 " 设置边输入边搜索
 set incsearch
 
+" 修复 wsl 终端下总是以 REPLACE 模式启动 vim
+if $TERM =~ 'xterm-256color'
+  set noek
+endif
+
 " coc 配置
 " coc - 使用 TAB 选择
 inoremap <silent><expr> <TAB>
