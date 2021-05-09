@@ -97,18 +97,19 @@ export LANG=en_US.UTF-8
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# aliases
 alias ll='ls -alF'
-
-# Need to install proxychains4
-# see https://github.com/rofl0r/proxychains-ng
-alias pc="proxychains4"
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
+
+# Need to install proxychains4
+# see https://github.com/rofl0r/proxychains-ng
+alias pc="proxychains4"
+
+# alias neofetch
+alias neo="neofetch"
 
 export PATH="$PATH:$HOME/.local/share/gem/ruby/2.7.0/bin"
 export GEM_HOME="$HOME/.local/share/gem/ruby/2.7.0/gems"
