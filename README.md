@@ -5,6 +5,7 @@
   - zshrc
   - .eslintrc.js
   - .eslintrc.react.js
+  - dst_bak.sh
 
 ## vim
 安装主题，安装位置
@@ -19,3 +20,7 @@
 
 主题列表
 - [dracula/zsh](https://github.com/dracula/zsh)
+
+## 饥荒备份存档
+- .dst_conf 配置 steamid 和 目标存档
+- zip 压缩

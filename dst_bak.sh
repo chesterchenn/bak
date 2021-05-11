@@ -9,12 +9,12 @@
 
 confFile=~/.dst_conf
 fileName=饥荒存档$(date "+%Y%m%d").zip
-prefix=~
+prefix=~/.klei/DoNotStarveTogether
 
 # 判断 .dst_conf 文件是否存在
 test ! -e $confFile && echo "$confFile 文件不存在" && exit 0
 
-conf=$(cat $conf)
+conf=$(cat $confFile)
 
 # 截取 id
 _id=$(echo "$conf" | grep "id=" | cut -d "=" -f 2)
