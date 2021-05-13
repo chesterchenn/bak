@@ -40,6 +40,13 @@ set scrolljump=3
 " 设置边输入边搜索
 set incsearch
 
+" 允许未保存关闭buffer
+set hidden
+
+" 快捷键
+nnoremap Q :q<CR>
+nnoremap S :w<CR>
+
 " 修复 wsl 终端下总是以 REPLACE 模式启动 vim
 nnoremap <esc>^[ <esc>^[
 
