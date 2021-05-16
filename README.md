@@ -3,8 +3,8 @@
 ## 备份列表
   - vimrc
   - zshrc
-  - .eslintrc.js
-  - .eslintrc.react.js
+  - eslintrc.js
+  - eslintrc.react.js
   - dst_bak.sh
 
 ## vim
