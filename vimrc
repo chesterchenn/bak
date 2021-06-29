@@ -68,10 +68,11 @@ nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " coc - 插件
-let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-explorer', 'coc-markdownlint']
+let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-explorer', 'coc-markdownlint', 'coc-prettier']
 
 " coc - coc-explorer 插件的快捷键
 :nnoremap <space>e :CocCommand explorer<CR>
+:command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " airline - 开启tab
 let g:airline#extensions#tabline#enabled = 1
