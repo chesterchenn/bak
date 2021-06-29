@@ -23,7 +23,8 @@ syntax enable
 set showcmd
 
 " 智能缩进
-set smartindent
+set autoindent
+" set smartindent
 
 " 缩进
 set shiftwidth=2
@@ -67,7 +68,7 @@ nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " coc - 插件
-let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-explorer']
+let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-explorer', 'coc-markdownlint']
 
 " coc - coc-explorer 插件的快捷键
 :nnoremap <space>e :CocCommand explorer<CR>
