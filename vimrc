@@ -50,10 +50,10 @@ nnoremap <esc>^[ <esc>^[
 " coc 配置
 " coc - 使用 TAB 选择
 inoremap <silent><expr> <TAB>
-      \ pumvisible() ? '\<C-n>' :
-      \ <SID>check_back_space() ? '\<TAB>' :
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
       \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? '\<C-p>' : '\<C-h>'
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 function! s:check_back_space() abort
   let col = col('.') - 1
@@ -61,7 +61,7 @@ function! s:check_back_space() abort
 endfunction
 
 " coc - 使用回车选择提示
-inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : '\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>'
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 " coc - 使用 `[g` `]g` 跳转到上一个/下一个报错
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
