@@ -72,7 +72,7 @@ let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-explorer', 'coc-
 
 " coc - coc-explorer 插件的快捷键
 :nnoremap <space>e :CocCommand explorer<CR>
-:command! -nargs=0 Prettier :CocCommand prettier.formatFile
+:command! -nargs=0 P :CocCommand prettier.formatFile
 
 " airline - 开启tab
 let g:airline#extensions#tabline#enabled = 1
