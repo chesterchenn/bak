@@ -1,6 +1,3 @@
-" 增加吸血鬼主题
-packadd! dracula
-
 " 设置主题
 colorscheme dracula
 
@@ -94,5 +91,6 @@ call plug#begin()
   Plug 'vim-airline/vim-airline'
   Plug 'powerline/powerline'
   Plug 'mattn/emmet-vim'
+  Plug 'dracula/vim', {'as': 'dracula'}
 call plug#end()
 
