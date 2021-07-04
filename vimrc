@@ -44,8 +44,16 @@ set incsearch
 " 允许未保存关闭buffer
 set hidden
 
+" 设置按键延时 3000 毫秒
+set timeoutlen=3000
+
 " 修复 wsl 终端下总是以 REPLACE 模式启动 vim
 nnoremap <esc>^[ <esc>^[
+
+" 定义 leader 按键为空格
+nnoremap <Space> <Nop>
+" let mapleader="\<Space>"
+let mapleader=" "
 
 " coc 配置
 " coc - 使用 TAB 选择
@@ -71,8 +79,10 @@ nmap <silent> ]g <Plug>(coc-diagnostic-next)
 let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-explorer', 'coc-markdownlint', 'coc-prettier']
 
 " coc - coc-explorer 插件的快捷键
-:nnoremap <space>e :CocCommand explorer<CR>
-:command! -nargs=0 P :CocCommand prettier.formatFile
+:nnoremap <leader>e :CocCommand explorer<CR>
+
+" coc - prettier 插件的快捷键
+nmap <leader>p :CocCommand prettier.formatFile
 
 " airline - 开启tab
 let g:airline#extensions#tabline#enabled = 1
