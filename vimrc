@@ -1,3 +1,6 @@
+" 增加dracula 主题
+packadd! dracula
+
 " 设置主题
 colorscheme dracula
 
