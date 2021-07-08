@@ -111,9 +111,6 @@ alias pc="proxychains4"
 # alias neofetch
 alias neo="neofetch"
 
-export PATH="$PATH:$HOME/.local/share/gem/ruby/2.7.0/bin"
-export GEM_HOME="$HOME/.local/share/gem/ruby/2.7.0/gems"
-
 # mute system
 unsetopt beep
 
