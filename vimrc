@@ -1,9 +1,3 @@
-" 增加dracula 主题
-packadd! dracula
-
-" 设置主题
-colorscheme dracula
-
 " 取消 vi 兼容模式
 set nocompatible
 
@@ -97,3 +91,5 @@ call plug#begin()
   Plug 'dracula/vim', {'as': 'dracula'}
 call plug#end()
 
+" 设置主题
+colorscheme dracula
