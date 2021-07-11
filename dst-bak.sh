@@ -4,7 +4,7 @@
 # OS: Arch linux
 
 # .dst_conf 样本文件
-# id=1234
+# steamid=1234
 # cluster=Cluster_1
 
 confFile=~/.dst_conf
@@ -16,13 +16,13 @@ test ! -e $confFile && echo "$confFile 文件不存在" && exit 0
 
 conf=$(cat $confFile)
 
-# 截取 id
-_id=$(echo "$conf" | grep "id=" | cut -d "=" -f 2)
+# 截取 steamid
+_steamid=$(echo "$conf" | grep "steamid=" | cut -d "=" -f 2)
 
 # 截取cluster
 _cluster=$(echo "$conf" | grep "cluster=" | cut -d "=" -f 2)
 
-_path=$prefix/$_id
+_path=$prefix/$_steamid
 
 # 判断目标文件夹是否存在
 test ! -e $_path && echo "$_path/$_cluster 存档不存在" && exit 0
