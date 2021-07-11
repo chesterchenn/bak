@@ -89,7 +89,8 @@ call plug#begin()
   Plug 'powerline/powerline'
   Plug 'mattn/emmet-vim'
   Plug 'dracula/vim', {'as': 'dracula'}
+  Plug 'LunarWatcher/auto-pairs', { 'tag': '*' }
 call plug#end()
 
-" 设置主题
+" 设置吸血鬼主题，必须放在 plug#end 后面
 colorscheme dracula
