@@ -42,6 +42,10 @@ alias neo="neofetch"
 # need to install ranger, see https://github.com/ranger/ranger
 alias r="ranger"
 
+# alias
+# guangzhou weather
+alias weather='curl wttr.in/guangzhou'
+
 # mute system
 unsetopt beep
 
