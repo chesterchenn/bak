@@ -30,13 +30,17 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
-# Need to install proxychains4
-# see https://github.com/rofl0r/proxychains-ng
+# alias proxychains4
+# need to install proxychains4, see https://github.com/rofl0r/proxychains-ng
 alias pc="proxychains4"
 
 # alias neofetch
 # need to install neofetch, see https://github.com/dylanaraps/neofetch
 alias neo="neofetch"
+
+# alias ranger
+# need to install ranger, see https://github.com/ranger/ranger
+alias r="ranger"
 
 # mute system
 unsetopt beep
