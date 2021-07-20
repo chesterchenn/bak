@@ -36,7 +36,7 @@ module.exports = {
       flatTernaryExpressions: false,
       ignoreComments: false,
     }],
-    
+
     // 禁止缩进时混用空格和制表键
     'no-mixed-spaces-and-tabs': 'error',
 
@@ -62,7 +62,7 @@ module.exports = {
       exceptions: ['-', '+'],
       markers: ['=', '!', '/'],
     }],
-  
+
     // 使用强等 === 和 !==
     eqeqeq: ['error', 'always', { null: 'ignore' }],
 
@@ -71,7 +71,7 @@ module.exports = {
 
     // 禁止未使用的变量声明
     'no-unused-vars': ['error', { vars: 'all', 'args': 'after-used', ignoreRestSiblings: true }],
-  
+
     // 禁止重新分配 const 变量
     'no-const-assign': 'error',
 
