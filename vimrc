@@ -82,6 +82,10 @@ nmap <leader>p :CocCommand prettier.formatFile
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
+" easy-align
+xmap ga <plug>(easyalign)
+nmap ga <plug>(easyalign)
+
 " 使用 vim plug 插件
 call plug#begin()
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -90,6 +94,7 @@ call plug#begin()
   Plug 'mattn/emmet-vim'
   Plug 'dracula/vim', {'as': 'dracula'}
   Plug 'LunarWatcher/auto-pairs', { 'tag': '*' }
+  Plug 'junegunn/vim-easy-align'
 call plug#end()
 
 " 设置吸血鬼主题，必须放在 plug#end 后面
