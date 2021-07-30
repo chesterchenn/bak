@@ -1,7 +1,5 @@
 {
   "line_length": false,
   "MD041": false,
-  "MD033": {
-    "allowed_elements": [ "h1", "h3", "HR", "p", "style", "div" ]
-  }
+  "MD033": false
 }
