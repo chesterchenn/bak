@@ -46,8 +46,7 @@ nnoremap <esc>^[ <esc>^[
 
 " 定义 leader 按键为空格
 nnoremap <Space> <Nop>
-" let mapleader="\<Space>"
-let mapleader=" "
+let mapleader="\<Space>"
 
 " coc 配置
 " coc - 使用 TAB 选择
@@ -68,6 +67,12 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR
 " coc - 使用 `[g` `]g` 跳转到上一个/下一个报错
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
+
+" coc - 代码导航
+nmap <slient> gd <Plug>(coc-definition)
+nmap <slient> gy <Plug>(coc-type-definition)
+nmap <slient> gi <Plug>(coc-implementation)
+nmap <slient> gr <Plug>(coc-reference)
 
 " coc - 插件
 let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-explorer', 'coc-markdownlint', 'coc-prettier']
