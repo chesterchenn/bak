@@ -18,11 +18,14 @@ syntax enable
 set showcmd
 
 " 智能缩进
-set autoindent
-" set smartindent
+" set autoindent
+set smartindent
 
 " 缩进
 set shiftwidth=2
+
+" 使用空格代替Tab缩进
+set expandtab
 
 " 高亮当前行
 set cursorline
