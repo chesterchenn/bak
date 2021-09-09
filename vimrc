@@ -18,8 +18,8 @@ syntax enable
 set showcmd
 
 " 智能缩进
-" set autoindent
-set smartindent
+set autoindent
+" set smartindent
 
 " 缩进
 set shiftwidth=2
