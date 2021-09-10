@@ -78,6 +78,9 @@ nmap <slient> gy <Plug>(coc-type-definition)
 nmap <slient> gi <Plug>(coc-implementation)
 nmap <slient> gr <Plug>(coc-reference)
 
+" coc - json 文件的注释
+autocmd FileType json syntax match Comment +\/\/.\+$+
+
 " coc - 插件
 let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-explorer', 'coc-markdownlint', 'coc-prettier']
 
