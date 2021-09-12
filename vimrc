@@ -65,6 +65,19 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
+" 使用 gh 显示文档
+nnoremap <silent> gh :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  elseif (coc#rpc#ready())
+    call CocActionAsync('doHover')
+  else
+    execute '!' . &keywordprg . " " . expand('<cword>')
+  endif
+endfunction
+
 " coc - 使用回车选择提示
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
@@ -77,9 +90,6 @@ nmap <slient> gd <Plug>(coc-definition)
 nmap <slient> gy <Plug>(coc-type-definition)
 nmap <slient> gi <Plug>(coc-implementation)
 nmap <slient> gr <Plug>(coc-reference)
-
-" coc - json 文件的注释
-autocmd FileType json syntax match Comment +\/\/.\+$+
 
 " coc - 插件
 let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-explorer', 'coc-markdownlint', 'coc-prettier']
@@ -111,6 +121,6 @@ call plug#begin()
 call plug#end()
 
 " 设置主题，必须放在 plug#end 后面
-" colorscheme dracula
-set background=dark
-colorscheme PaperColor
+colorscheme dracula
+" set background=dark
+" colorscheme PaperColor
