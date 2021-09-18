@@ -42,6 +42,9 @@ alias neo="neofetch"
 # need to install ranger, see https://github.com/ranger/ranger
 alias r="ranger"
 
+# alias exit
+alias e="exit"
+
 # alias
 # guangzhou weather
 alias weather='curl wttr.in/guangzhou'
