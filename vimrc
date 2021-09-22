@@ -45,6 +45,11 @@ set hidden
 " 设置按键延时 3000 毫秒
 set timeoutlen=3000
 
+" 设置最大的文件标记数和
+" 寄存器最大保存的行数（即可最大可复制的行数）
+" 由于第二个默认为 50，导致复制超过 50 行会缺失
+set viminfo='50,<1000
+
 " 修复 wsl 终端下总是以 REPLACE 模式启动 vim
 nnoremap <esc>^[ <esc>^[
 
