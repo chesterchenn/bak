@@ -110,8 +110,8 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 " easy-align
-xmap ga <plug>(easyalign)
-nmap ga <plug>(easyalign)
+xmap ga <plug>(EasyAlign)
+nmap ga <plug>(EasyAlign)
 
 " 使用 vim plug 插件
 call plug#begin()
