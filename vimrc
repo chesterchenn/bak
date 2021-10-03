@@ -123,6 +123,8 @@ call plug#begin()
   Plug 'LunarWatcher/auto-pairs', { 'tag': '*' }
   Plug 'junegunn/vim-easy-align'
   Plug 'NLKNguyen/papercolor-theme'
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  Plug 'junegunn/fzf.vim'
 call plug#end()
 
 " 设置主题，必须放在 plug#end 后面
