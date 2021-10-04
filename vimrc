@@ -125,6 +125,7 @@ call plug#begin()
   Plug 'NLKNguyen/papercolor-theme'
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
+  Plug 'ap/vim-css-color'
 call plug#end()
 
 " 设置主题，必须放在 plug#end 后面
