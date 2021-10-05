@@ -49,6 +49,10 @@ alias e="exit"
 # guangzhou weather
 alias weather='curl wttr.in/guangzhou'
 
+# alias start blog
+alias startBlog='cd ~/blog && bash ./start.sh'
+alias stopBlog='cd ~/blog && bash ./kill.sh'
+
 # mute system
 unsetopt beep
 
