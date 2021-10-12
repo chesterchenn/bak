@@ -60,3 +60,6 @@ unsetopt beep
 alias cs='echo -n -e "\033[?25h"'
 alias ch='echo -n -e "\033[?25l"'
 
+# Install Ruby Gems
+export GEM_HOME="$HOME/.local/share/gem"
+export PATH="$GEM_HOME/bin:$PATH"
