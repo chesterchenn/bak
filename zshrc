@@ -56,10 +56,13 @@ alias stopBlog='cd ~/blog && bash ./kill.sh'
 # mute system
 unsetopt beep
 
-# fix windows-wsl cursor display
-alias cs='echo -n -e "\033[?25h"'
-alias ch='echo -n -e "\033[?25l"'
-
 # Install Ruby Gems
 export GEM_HOME="$HOME/.local/share/gem"
 export PATH="$GEM_HOME/bin:$PATH"
+
+export OH_MY_ZSH="$HOME/.oh-my-zsh"
+
+# load custom config
+if [ -f ~/.myrc ]; then
+  source ~/.myrc
+fi
