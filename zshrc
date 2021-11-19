@@ -63,6 +63,6 @@ export PATH="$GEM_HOME/bin:$PATH"
 export OH_MY_ZSH="$HOME/.oh-my-zsh"
 
 # load custom config
-if [ -f ~/.myrc ]; then
-  source ~/.myrc
+if [ -f ~/.my_rc ]; then
+  source ~/.my_rc
 fi

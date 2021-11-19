@@ -1,0 +1,12 @@
+#! /bin/bash
+
+# 各个系统下不同的设置
+
+# 修复 wsl 下光标消失的问题
+# echo -n -e "\033[?25h"
+
+# 用 open 别名打开本地浏览器
+# Arch Linux
+# alias open=xdg-open
+# Windows WSL
+# alias open=explorer.exe
