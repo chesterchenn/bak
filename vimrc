@@ -120,12 +120,13 @@ call plug#begin()
   Plug 'powerline/powerline'
   Plug 'mattn/emmet-vim'
   Plug 'dracula/vim', {'as': 'dracula'}
-  Plug 'LunarWatcher/auto-pairs', { 'tag': '*' }
+  Plug 'LunarWatcher/auto-pairs'
   Plug 'junegunn/vim-easy-align'
   Plug 'NLKNguyen/papercolor-theme'
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
   Plug 'ap/vim-css-color'
+  Plug 'tpope/vim-commentary'
 call plug#end()
 
 " 设置主题，必须放在 plug#end 后面
