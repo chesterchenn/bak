@@ -37,3 +37,7 @@ prettier 的配置文件
 ## my_rc
 
 兼容不同系统下的设置
+
+## coc-settings
+
+vim coc 插件的配置 coc-settings.json，需要安装 coc-json，一般放在 .vim（neovim 放在 ~/.config/nvim）。
