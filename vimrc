@@ -123,8 +123,6 @@ call plug#begin()
   Plug 'LunarWatcher/auto-pairs'
   Plug 'junegunn/vim-easy-align'
   Plug 'NLKNguyen/papercolor-theme'
-  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-  Plug 'junegunn/fzf.vim'
   Plug 'ap/vim-css-color'
   Plug 'tpope/vim-commentary'
 call plug#end()
