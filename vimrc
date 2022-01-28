@@ -97,10 +97,7 @@ nmap <slient> gi <Plug>(coc-implementation)
 nmap <slient> gr <Plug>(coc-reference)
 
 " coc - 插件
-let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-explorer', 'coc-markdownlint', 'coc-prettier', 'coc-rls']
-
-" coc - coc-explorer 插件的快捷键
-:nnoremap <leader>e :CocCommand explorer<CR>
+let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-markdownlint', 'coc-prettier', 'coc-rls']
 
 " coc - prettier 插件的快捷键
 nmap <leader>f :CocCommand prettier.formatFile
