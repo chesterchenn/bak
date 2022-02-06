@@ -96,8 +96,12 @@ nmap <slient> gy <Plug>(coc-type-definition)
 nmap <slient> gi <Plug>(coc-implementation)
 nmap <slient> gr <Plug>(coc-reference)
 
+" coc - 格式化选中的代码
+xmap <leader>s <Plug>(coc-format-selected)
+nmap <leader>s <Plug>(coc-format-selected)
+
 " coc - 插件
-let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-markdownlint', 'coc-prettier', 'coc-rls']
+let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-markdownlint', 'coc-prettier', 'coc-rls', 'coc-java']
 
 " coc - prettier 插件的快捷键
 nmap <leader>f :CocCommand prettier.formatFile
