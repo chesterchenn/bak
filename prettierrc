@@ -19,7 +19,7 @@ bracketSpacing: true
 singleQuote: true
 
 # jsx 使用单引号
-jsxSingleQuote: true
+jsxSingleQuote: false
 
 # 对象中的属性使用引号
 quoteProps: "as-needed"
