@@ -16,3 +16,7 @@
 
 # 登录远程系统
 # alias login="ssh ubuntu@127.0.0.1"
+
+# JAVA_HOME
+# export JAVA_HOME='/usr/lib/jvm/java-11-openjdk'
+# export PATH=$JAVA_HOME/bin:$PATH
