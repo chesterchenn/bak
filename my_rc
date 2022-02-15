@@ -18,5 +18,8 @@
 # alias login="ssh user@host"
 
 # JAVA_HOME
+# Arch Linux
 # export JAVA_HOME='/usr/lib/jvm/java-11-openjdk'
+# Ubuntu
+# export JAVA_HOME='/usr/lib/jvm/java-11-openjdk-amd64'
 # export PATH=$JAVA_HOME/bin:$PATH
