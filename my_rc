@@ -11,8 +11,8 @@
 # Windows WSL
 # alias open='explorer.exe'
 
-# ssr 重启 clash 服务
-# alias ssr='sudo systemctl restart clash'
+# 重启 clash 服务
+# alias clashRestart='sudo systemctl restart clash'
 
 # 登录远程系统
 # alias login="ssh user@host"
