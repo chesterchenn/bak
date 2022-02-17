@@ -41,3 +41,11 @@ prettier 的配置文件
 ## coc-settings
 
 vim coc 插件的配置 coc-settings.json，需要安装 coc-json，一般放在 .vim（neovim 放在 ~/.config/nvim）。
+
+## rc 与 rifle
+
+ranger 的配置文件，放在 ~/.config/ranger 目录下
+
+## markdownlintrc
+
+markdown 格式化文件，放在 HOME 目录下
