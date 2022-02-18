@@ -53,6 +53,12 @@ alias weather='curl wttr.in/guangzhou'
 alias startBlog='cd ~/blog && bash ./start.sh'
 alias stopBlog='cd ~/blog && bash ./kill.sh'
 
+# alias update yarn
+alias updateYarn="curl --compressed -o- -L https://yarnpkg.com/install.sh | bash"
+
+# alias source
+alias so="source"
+
 # mute system
 unsetopt beep
 
@@ -66,3 +72,5 @@ export OH_MY_ZSH="$HOME/.oh-my-zsh"
 if [ -f ~/.my_rc ]; then
   source ~/.my_rc
 fi
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
