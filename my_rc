@@ -14,14 +14,18 @@
 # 重启 clash 服务
 # alias clashRestart='sudo systemctl restart clash'
 
+# 远程系统相关配置
+# user=
+# host=
+
 # 登录远程系统
-# alias login="ssh user@host"
+# alias login="ssh $user@$host"
 
 # 上传SU_WA至远程系统
-# alias pushS="scp ~/SU_WA user@host:SU_WA"
+# alias pushS="scp ~/SU_WA $user@$host:SU_WA"
 
 # 上传JD_COOKIE到远程系统
-# alias pushJ="scp ~/JD_COOKIE user@host:JD_COOKIE"
+# alias pushJ="scp ~/JD_COOKIE $user@$host:JD_COOKIE"
 
 # JAVA_HOME
 # Arch Linux
