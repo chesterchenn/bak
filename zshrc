@@ -48,7 +48,7 @@ alias e="exit"
 alias weather='curl wttr.in/guangzhou'
 
 # alias start blog
-alias startBlog='cd ~/blog && bash ./start.sh'
+alias blog='cd ~/blog && bash ./start.sh'
 alias stopBlog='cd ~/blog && bash ./kill.sh'
 
 # alias update yarn
