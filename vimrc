@@ -114,6 +114,10 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 xmap ga <plug>(EasyAlign)
 nmap ga <plug>(EasyAlign)
 
+" ctrlp 的默认快捷键
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
 " 使用 vim plug 插件
 call plug#begin()
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -126,6 +130,7 @@ call plug#begin()
   Plug 'NLKNguyen/papercolor-theme'
   Plug 'ap/vim-css-color'
   Plug 'tpope/vim-commentary'
+  Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 
 " 设置主题，必须放在 plug#end 后面
