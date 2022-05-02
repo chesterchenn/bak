@@ -25,7 +25,7 @@
 # alias pushS="scp ~/.suwarc $user@$host:.suwarc"
 
 # 上传JD_COOKIE到远程系统
-# alias pushJ="scp ~/JD_COOKIE $user@$host:JD_COOKIE"
+# alias pushJ="scp ~/.jdrc $user@$host:.jdrc"
 
 # 开启远程服务器代理
 # alias lp="ssh -L 7890:localhost:7890 $user@$host"
