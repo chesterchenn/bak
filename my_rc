@@ -28,7 +28,7 @@
 # alias pushJ="scp ~/.jdrc $user@$host:.jdrc"
 
 # 开启远程服务器代理
-# alias lp="ssh -L 7890:localhost:7890 $user@$host"
+# alias lp="ssh -L 7890:localhost:7890 $user@$host -Nf"
 
 # JAVA_HOME
 # Arch Linux
