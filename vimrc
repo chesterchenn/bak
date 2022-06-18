@@ -131,6 +131,7 @@ call plug#begin()
   Plug 'ap/vim-css-color'
   Plug 'tpope/vim-commentary'
   Plug 'ctrlpvim/ctrlp.vim'
+  Plug 'tpope/vim-surround'
 call plug#end()
 
 " 设置主题，必须放在 plug#end 后面
