@@ -114,9 +114,11 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 xmap ga <plug>(EasyAlign)
 nmap ga <plug>(EasyAlign)
 
-" ctrlp 的默认快捷键
+" ctrlp 的配置
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_custom_ignore = 'node_modules'
 
 " 使用 vim plug 插件
 call plug#begin()
