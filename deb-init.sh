@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# 更新包列表
+echo "更新包列表"
+sudo apt update
+
+# 更新系统
+echo "更新系统"
+sudo apt upgrade -y
+
 # 用于安装 debian 系的软件
 echo "开始安装软件"
 sudo apt install -y vim git proxychains4 zsh neofetch ranger jq
