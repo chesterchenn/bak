@@ -91,10 +91,10 @@ nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " coc - 代码导航
-nmap <slient> gd <Plug>(coc-definition)
-nmap <slient> gy <Plug>(coc-type-definition)
-nmap <slient> gi <Plug>(coc-implementation)
-nmap <slient> gr <Plug>(coc-reference)
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-reference)
 
 " coc - 格式化选中的代码
 xmap <leader>s <Plug>(coc-format-selected)
@@ -122,7 +122,7 @@ let g:ctrlp_custom_ignore = 'node_modules'
 
 " 使用 vim plug 插件
 call plug#begin()
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
   Plug 'vim-airline/vim-airline'
   Plug 'powerline/powerline'
   Plug 'mattn/emmet-vim'
