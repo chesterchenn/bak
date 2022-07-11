@@ -8,7 +8,7 @@ ohmyzshFile=~/.oh-my-zsh
 if [ -e $ohmyzshFile ]; then
   echo "oh-my-zsh 已经存在\n"
 else
-  sh -c "$($proxy curl -fsSL http://raw.githubusercontent.com/ohmyzsh/master/tools/install.sh)"
+  sh -c "$($proxy curl -fsSL http://raw.github.com/ohmyzsh/master/tools/install.sh)"
   echo "vim-plug 安装结束\n"
 fi
 
