@@ -27,6 +27,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
+alias h='cd $HOME'
 
 # alias proxychains4
 # need to install proxychains4, see https://github.com/rofl0r/proxychains-ng
