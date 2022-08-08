@@ -21,9 +21,6 @@
 # 登录远程系统
 # alias login="ssh $user@$host"
 
-# 上传SU_WA至远程系统
-# alias pushS="scp ~/.suwarc $user@$host:.suwarc"
-
 # 上传JD_COOKIE到远程系统
 # alias pushJ="scp ~/.jdrc $user@$host:.jdrc"
 
