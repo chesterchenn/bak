@@ -48,6 +48,8 @@ alias e="exit"
 # guangzhou weather
 alias weather='curl wttr.in/guangzhou'
 
+alias pssh='ps -ef | grep ssh'
+
 # alias start blog
 alias blog='cd ~/blog && bash ./start.sh'
 alias stopBlog='cd ~/blog && bash ./kill.sh'
