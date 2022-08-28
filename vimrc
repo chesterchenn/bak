@@ -61,8 +61,6 @@ let mapleader="\<Space>"
 " coc - 使用回车选择提示
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
-inoremap <silent><expr> <C-x><C-z> coc#pum#visible() ? coc#pum#stop() : "\<C-x>\<C-z>"
-
 " coc - 使用 TAB 选择
 inoremap <silent><expr> <TAB>
         \ coc#pum#visible() ? coc#pum#next(1):
@@ -80,12 +78,10 @@ endfunction
 nnoremap <silent> gh :call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
-  if (index(['vim','help'], &filetype) >= 0)
-    execute 'h '.expand('<cword>')
-  elseif (coc#rpc#ready())
+  if CocAction('hasProvider', 'hover')
     call CocActionAsync('doHover')
   else
-    execute '!' . &keywordprg . " " . expand('<cword>')
+    call feedkeys('gh', 'in')
   endif
 endfunction
 
@@ -100,9 +96,14 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-reference)
 
+" 符号重命名
+nmap <leader>rn <Plug>(coc-rename)
+
 " coc - 格式化选中的代码
 xmap <leader>s <Plug>(coc-format-selected)
 nmap <leader>s <Plug>(coc-format-selected)
+
+command! -nargs=? Fold :call CocAction('fold', <f-args>)
 
 " coc - 插件
 let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-markdownlint', 'coc-prettier', 'coc-rls', 'coc-java']
@@ -136,7 +137,6 @@ call plug#begin()
   Plug 'NLKNguyen/papercolor-theme'
   Plug 'ap/vim-css-color'
   Plug 'tpope/vim-commentary'
-  Plug 'ctrlpvim/ctrlp.vim'
   Plug 'tpope/vim-surround'
 call plug#end()
 
