@@ -58,12 +58,18 @@ nnoremap <Space> <Nop>
 let mapleader="\<Space>"
 
 " coc 配置
+" coc - 使用回车选择提示
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+inoremap <silent><expr> <C-x><C-z> coc#pum#visible() ? coc#pum#stop() : "\<C-x>\<C-z>"
+
 " coc - 使用 TAB 选择
 inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+        \ coc#pum#visible() ? coc#pum#next(1):
+        \ <SID>check_back_space() ? "\<Tab>" :
+        \ coc#refresh()
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+inoremap <silent><expr> <c-space> coc#refresh()
 
 function! s:check_back_space() abort
   let col = col('.') - 1
@@ -83,8 +89,6 @@ function! s:show_documentation()
   endif
 endfunction
 
-" coc - 使用回车选择提示
-inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 " coc - 使用 `[g` `]g` 跳转到上一个/下一个报错
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
@@ -122,7 +126,7 @@ let g:ctrlp_custom_ignore = 'node_modules'
 
 " 使用 vim plug 插件
 call plug#begin()
-  Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'vim-airline/vim-airline'
   Plug 'powerline/powerline'
   Plug 'mattn/emmet-vim'
