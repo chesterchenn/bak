@@ -57,6 +57,9 @@ nnoremap <esc>^[ <esc>^[
 nnoremap <Space> <Nop>
 let mapleader="\<Space>"
 
+nnoremap Q :q<CR>
+nnoremap S :w<CR>
+
 " coc 配置
 " coc - 使用回车选择提示
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
@@ -106,7 +109,7 @@ nmap <leader>s <Plug>(coc-format-selected)
 command! -nargs=? Fold :call CocAction('fold', <f-args>)
 
 " coc - 插件
-let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-markdownlint', 'coc-prettier', 'coc-rls', 'coc-java']
+let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-markdownlint', 'coc-prettier', 'coc-rls', 'coc-java', 'coc-vimlsp']
 
 " coc - prettier 插件的快捷键
 nmap <leader>f :CocCommand prettier.formatFile
@@ -118,12 +121,6 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 " easy-align
 xmap ga <plug>(EasyAlign)
 nmap ga <plug>(EasyAlign)
-
-" ctrlp 的配置
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_working_path_mode = 'ra'
-let g:ctrlp_custom_ignore = 'node_modules'
 
 " 使用 vim plug 插件
 call plug#begin()
