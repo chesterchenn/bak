@@ -1,24 +1,22 @@
 {
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "workbench.colorTheme": "Firefox Dark",
   "editor.lineNumbers": "relative",
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.fontSize": 15,
+  "editor.fontLigatures": true,
+  "vim.leader": "<space>",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "javascript.updateImportsOnFileMove.enabled": "always",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.fontLigatures": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "vim.normalModeKeyBindingsNonRecursive": [
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vim.normalModeKeyBindings": [
     {
       "before": ["<leader>", "s"],
       "commands": ["editor.action.formatSelection"]
@@ -26,6 +24,14 @@
     {
       "before": ["<leader>", "f"],
       "commands": ["editor.action.formatDocument"]
+    },
+    {
+      "before": ["S"],
+      "commands": [":w"]
+    },
+    {
+      "before": ["Q"],
+      "commands": [":q"]
     }
   ],
   "vim.visualModeKeyBindings": [
@@ -37,7 +43,5 @@
       "before": ["<leader>", "f"],
       "commands": ["editor.action.formatDocument"]
     }
-  ],
-  "vim.leader": "<space>",
-  "workbench.iconTheme": "material-icon-theme"
+  ]
 }
