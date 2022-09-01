@@ -44,6 +44,7 @@ set hidden
 
 " 设置按键延时 3000 毫秒
 set timeoutlen=3000
+set ttimeoutlen=10
 
 " 设置最大的文件标记数和
 " 寄存器最大保存的行数（即可最大可复制的行数）
@@ -124,17 +125,18 @@ nmap ga <plug>(EasyAlign)
 
 " 使用 vim plug 插件
 call plug#begin()
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
-  Plug 'vim-airline/vim-airline'
-  Plug 'powerline/powerline'
-  Plug 'mattn/emmet-vim'
-  Plug 'dracula/vim', {'as': 'dracula'}
-  Plug 'LunarWatcher/auto-pairs'
-  Plug 'junegunn/vim-easy-align'
-  Plug 'NLKNguyen/papercolor-theme'
   Plug 'ap/vim-css-color'
+  Plug 'dracula/vim', {'as': 'dracula'}
+  Plug 'junegunn/vim-easy-align'
+  Plug 'LunarWatcher/auto-pairs'
+  Plug 'mattn/emmet-vim'
+  Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'NLKNguyen/papercolor-theme'
+  Plug 'powerline/powerline'
   Plug 'tpope/vim-commentary'
   Plug 'tpope/vim-surround'
+  Plug 'vim-airline/vim-airline'
 call plug#end()
 
 " 设置主题，必须放在 plug#end 后面
