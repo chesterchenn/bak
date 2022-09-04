@@ -1,5 +1,12 @@
 #! /bin/bash
 
+# 以下配置需要手动输入
+
+# 远程系统相关配置
+# user=
+# host=
+# clashUrl=""
+
 # 各个系统下不同的设置
 
 # 修复 wsl 下光标消失的问题
@@ -12,11 +19,9 @@
 # alias open='explorer.exe'
 
 # 重启 clash 服务
-# alias clashRestart='sudo systemctl restart clash'
-
-# 远程系统相关配置
-# user=
-# host=
+# alias clashRestart="sudo systemctl restart clash"
+# 更新 clash
+# alias clashUpdate="wget -O ~/.config/clash/config.yaml $clashUrl"
 
 # 登录远程系统
 # alias login="ssh $user@$host"
@@ -30,6 +35,8 @@
 # JAVA_HOME
 # Arch Linux
 # export JAVA_HOME='/usr/lib/jvm/java-11-openjdk'
+# export PATH=$JAVA_HOME/bin:$PATH
 # Ubuntu
 # export JAVA_HOME='/usr/lib/jvm/java-11-openjdk-amd64'
 # export PATH=$JAVA_HOME/bin:$PATH
+
