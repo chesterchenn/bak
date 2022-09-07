@@ -60,6 +60,8 @@ alias pnpm="pn"
 # alias source
 alias so="source"
 
+alias G="gitui"
+
 # mute system
 unsetopt beep
 
