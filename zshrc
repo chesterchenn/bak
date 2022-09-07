@@ -54,8 +54,8 @@ alias pssh='ps -ef | grep ssh'
 alias blog='cd ~/blog && bash ./start.sh'
 alias stopBlog='cd ~/blog && bash ./kill.sh'
 
-# alias update yarn
-alias updateYarn="curl --compressed -o- -L https://yarnpkg.com/install.sh | bash"
+# alias pnpm
+alias pnpm="pn"
 
 # alias source
 alias so="source"
