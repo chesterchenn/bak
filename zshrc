@@ -55,7 +55,7 @@ alias blog='cd ~/blog && bash ./start.sh'
 alias stopBlog='cd ~/blog && bash ./kill.sh'
 
 # alias pnpm
-alias pnpm="pn"
+alias pn="pnpm"
 
 # alias source
 alias so="source"
