@@ -62,9 +62,6 @@ nnoremap Q :q<CR>
 nnoremap S :w<CR>
 
 " coc 配置
-" coc - 使用回车选择提示
-inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
-
 " coc - 使用 TAB 选择
 inoremap <silent><expr> <TAB>
         \ coc#pum#visible() ? coc#pum#next(1):
@@ -72,6 +69,9 @@ inoremap <silent><expr> <TAB>
         \ coc#refresh()
 inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 inoremap <silent><expr> <c-space> coc#refresh()
+
+" coc - 使用回车选择提示
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 function! s:check_back_space() abort
   let col = col('.') - 1
@@ -109,11 +109,14 @@ nmap <leader>s <Plug>(coc-format-selected)
 
 command! -nargs=? Fold :call CocAction('fold', <f-args>)
 
+command! -nargs=0 Format :call CocActionAsync('format')
+
 " coc - 插件
 let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-markdownlint', 'coc-prettier', 'coc-rls', 'coc-java', 'coc-vimlsp']
 
 " coc - prettier 插件的快捷键
 nmap <leader>f :CocCommand prettier.formatFile
+
 
 " airline - 开启tab
 let g:airline#extensions#tabline#enabled = 1
@@ -122,6 +125,11 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 " easy-align
 xmap ga <plug>(EasyAlign)
 nmap ga <plug>(EasyAlign)
+
+vnoremap Y "+y
+
+" 退出插入模式禁用输入法
+autocmd InsertLeave * :silent !fcitx5-remote -c
 
 " 使用 vim plug 插件
 call plug#begin()
