@@ -60,7 +60,8 @@ alias pn="pnpm"
 # alias source
 alias so="source"
 
-alias G="gitui"
+# alias platuml
+alias plantuml="plantuml -svg"
 
 # mute system
 unsetopt beep
