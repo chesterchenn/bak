@@ -21,6 +21,9 @@ plugins=(git bundler)
 export LANG=en_US.UTF-8
 # export LANG=zh_CN.UTF-8
 
+# mute system
+unsetopt beep
+
 # aliases
 alias ll='ls -alF'
 alias ls='ls --color=auto'
@@ -61,10 +64,7 @@ alias pn="pnpm"
 alias so="source"
 
 # alias platuml
-alias plantuml="plantuml -svg"
-
-# mute system
-unsetopt beep
+alias puml="plantuml -svg"
 
 # Install Ruby Gems
 export GEM_HOME="$HOME/.local/share/gem"
