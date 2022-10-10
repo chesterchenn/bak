@@ -60,6 +60,7 @@ let mapleader="\<Space>"
 
 nnoremap Q :q<CR>
 nnoremap S :w<CR>
+nnoremap T :ter<CR>
 
 " coc 配置
 " coc - 使用 TAB 选择
