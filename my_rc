@@ -21,7 +21,7 @@
 # 重启 clash 服务
 # alias clashRestart="sudo systemctl restart clash"
 # 更新 clash
-# alias clashUpdate="wget -O ~/.config/clash/config.yaml $clashUrl"
+# alias clashUpdate="wget -O ~/.config/clash/config.yaml '$clashUrl'"
 
 # 登录远程系统
 # alias login="ssh $user@$host"
