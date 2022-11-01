@@ -90,7 +90,6 @@ function! s:show_documentation()
   endif
 endfunction
 
-
 " coc - 使用 `[g` `]g` 跳转到上一个/下一个报错
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
@@ -118,6 +117,8 @@ let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-markdownlint', '
 " coc - prettier 插件的快捷键
 nmap <leader>f :CocCommand prettier.formatFile
 
+" coc 快速修复
+nmap <leader>qf <Plug>(coc-fix-current)
 
 " airline - 开启tab
 let g:airline#extensions#tabline#enabled = 1
