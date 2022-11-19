@@ -1,5 +1,21 @@
 用于个人备份
 
+<!-- vim-markdown-toc GFM -->
+
+* [coc-settings](#coc-settings)
+* [cookie.js](#cookiejs)
+* [deb-init 和 deb-after-proxy](#deb-init-和-deb-after-proxy)
+* [editorconfig eslintrc prettierrc](#editorconfig-eslintrc-prettierrc)
+* [markdownlintrc](#markdownlintrc)
+* [my_rc](#my_rc)
+* [rc 与 rifle](#rc-与-rifle)
+* [vimrc](#vimrc)
+* [vscode-settings](#vscode-settings)
+* [win_sys_proxy](#win_sys_proxy)
+* [zshrc](#zshrc)
+
+<!-- vim-markdown-toc -->
+
 ## coc-settings
 
 vim coc 插件的配置 coc-settings.json，需要安装 coc-json，一般放在 .vim（neovim 放在 ~/.config/nvim）。
@@ -54,3 +70,4 @@ windows 系统代理设置以及取消脚本。
 ## zshrc
 
 配合 [oh my zsh](https://github.com/ohmyzsh/ohmyzsh) 使用
+
