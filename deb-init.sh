@@ -10,7 +10,7 @@ sudo apt upgrade -y
 
 # 用于安装 debian 系的软件
 echo "开始安装软件"
-sudo apt install -y vim git proxychains4 zsh neofetch ranger jq
+sudo apt install -y vim git proxychains4 zsh neofetch ranger jq autossh
 echo "安装软件结束\n"
 
 # 更新 shell
