@@ -152,6 +152,7 @@ call plug#begin()
   Plug 'tpope/vim-commentary'
   Plug 'tpope/vim-surround'
   Plug 'vim-airline/vim-airline'
+  Plug 'mzlogin/vim-markdown-toc'
 call plug#end()
 
 " 设置主题，必须放在 plug#end 后面
