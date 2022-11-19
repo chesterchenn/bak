@@ -133,8 +133,10 @@ nmap ga <plug>(EasyAlign)
 
 vnoremap Y "+y
 
-" 退出插入模式禁用输入法
-" autocmd InsertLeave * :silent !fcitx5-remote -c
+" 加载独特的 vim 配置
+if filereadable($HOME . '/.vim/.myvimrc')
+  source $HOME/.vim/.myvimrc
+endif
 
 " 使用 vim plug 插件
 call plug#begin()

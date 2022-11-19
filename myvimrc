@@ -1,0 +1,4 @@
+" 文件目录 $HOME/.vim/.myvimrc
+
+" 退出插入模式禁用输入法
+autocmd InsertLeave * :silent !fcitx5-remote -c
