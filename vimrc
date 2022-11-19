@@ -51,6 +51,9 @@ set ttimeoutlen=10
 " 由于第二个默认为 50，导致复制超过 50 行会缺失
 set viminfo='50,<1000
 
+" 显示搜索个数
+set shortmess-=S
+
 " 修复 wsl 终端下总是以 REPLACE 模式启动 vim
 nnoremap <esc>^[ <esc>^[
 
