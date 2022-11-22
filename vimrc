@@ -54,6 +54,9 @@ set viminfo='50,<1000
 " 显示搜索个数
 set shortmess-=S
 
+" 忽略大小写查找
+set ic
+
 " 修复 wsl 终端下总是以 REPLACE 模式启动 vim
 nnoremap <esc>^[ <esc>^[
 
