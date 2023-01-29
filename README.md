@@ -6,6 +6,7 @@
 * [cookie.js](#cookiejs)
 * [deb-init 和 deb-after-proxy](#deb-init-和-deb-after-proxy)
 * [editorconfig eslintrc prettierrc](#editorconfig-eslintrc-prettierrc)
+* [init.vim](#initvim)
 * [markdownlintrc](#markdownlintrc)
 * [my_rc](#my_rc)
 * [rc 与 rifle](#rc-与-rifle)
@@ -36,6 +37,14 @@ deb-after-proxy 用于配置好代理之后安装的软件。
 
 前端项目代码规范。
 
+## init.vim
+
+当前跟 vimrc 保持同步
+
+neovim 的配置文件，放在 ~/.config/nvim 目录下
+
+使用 vim-plug 安装插件，请先安装 [vim-plug](https://github.com/junegunn/vim-plug)，位于 $HOME/.local/share/nvim/site/autoload/plug.vim
+
 ## markdownlintrc
 
 markdown 格式化文件，放在 `$HOME` 目录下。
@@ -50,7 +59,9 @@ ranger 的配置文件，放在 ~/.config/ranger 目录下
 
 ## vimrc
 
-使用 vim-plug 安装插件，请先安装 [vim-plug](https://github.com/junegunn/vim-plug)
+当前跟 init.vim 保持同步
+
+使用 vim-plug 安装插件，请先安装 [vim-plug](https://github.com/junegunn/vim-plug)，位于 $HOME/.vim/autoload/plug.vim
 
 ```shell
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -70,4 +81,3 @@ windows 系统代理设置以及取消脚本。
 ## zshrc
 
 配合 [oh my zsh](https://github.com/ohmyzsh/ohmyzsh) 使用
-
