@@ -192,6 +192,7 @@ call plug#begin()
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
   Plug 'voldikss/vim-floaterm'
+  Plug 'pechorin/any-jump.vim'
 call plug#end()
 
 " 设置主题，必须放在 plug#end 后面
