@@ -66,10 +66,9 @@ let mapleader="\<Space>"
 
 nnoremap Q :q<CR>
 nnoremap S :w<CR>
-nnoremap T :ter<CR>
 
-" coc 配置
-" coc - 使用 TAB 选择
+" ==================== coc ====================
+" 使用 TAB 选择
 inoremap <silent><expr> <TAB>
         \ coc#pum#visible() ? coc#pum#next(1):
         \ <SID>check_back_space() ? "\<Tab>" :
@@ -77,7 +76,7 @@ inoremap <silent><expr> <TAB>
 inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 inoremap <silent><expr> <c-space> coc#refresh()
 
-" coc - 使用回车选择提示
+" 使用回车选择提示
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 function! s:check_back_space() abort
@@ -96,11 +95,11 @@ function! s:show_documentation()
   endif
 endfunction
 
-" coc - 使用 `[g` `]g` 跳转到上一个/下一个报错
+" 跳转到上一个/下一个报错
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
-" coc - 代码导航
+" 代码导航
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
@@ -109,32 +108,65 @@ nmap <silent> gr <Plug>(coc-reference)
 " 符号重命名
 nmap <leader>rn <Plug>(coc-rename)
 
-" coc - 格式化选中的代码
+" 格式化选中的代码
 xmap <leader>s <Plug>(coc-format-selected)
 nmap <leader>s <Plug>(coc-format-selected)
 
-command! -nargs=? Fold :call CocAction('fold', <f-args>)
-
-command! -nargs=0 Format :call CocActionAsync('format')
-
-" coc - 插件
+" 插件
 let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-markdownlint', 'coc-prettier', 'coc-rls', 'coc-java', 'coc-vimlsp']
 
-" coc - prettier 插件的快捷键
-nmap <leader>f :CocCommand prettier.formatFile
+" prettier 插件的快捷键
+nmap <leader>f :CocCommand prettier.formatFile<CR>
 
-" coc 快速修复
+" 快速修复
 nmap <leader>qf <Plug>(coc-fix-current)
 
-" airline - 开启tab
+" ==================== airline ====================
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
-" easy-align
+" ==================== easy-align ====================
 xmap ga <plug>(EasyAlign)
 nmap ga <plug>(EasyAlign)
 
-vnoremap Y "+y
+" ==================== rnvimr ====================
+let g:rnvimr_enable_ex = 1
+let g:rnvimr_enable_picker = 1
+let g:rnvimr_draw_border = 1
+highlight link RnvimrNormal CursorLine
+
+nnoremap <silent> R :RnvimrToggle<CR><C-\><C-n>:RnvimrResize<CR>
+
+let g:rnvimr_action = {
+            \ '<C-t>': 'NvimEdit tabedit',
+            \ '<C-x>': 'NvimEdit split',
+            \ '<C-v>': 'NvimEdit vsplit',
+            \ 'gw': 'JumpNvimCwd',
+            \ 'yw': 'EmitRangerCwd'
+            \ }
+
+let g:rnvimr_ranger_views = [
+            \ {'minwidth': 90, 'ratio': []},
+            \ {'minwidth': 50, 'maxwidth': 89, 'ratio': [1,1]},
+            \ {'maxwidth': 49, 'ratio': [1]}
+            \ ]
+
+let g:rnvimr_layout = {
+            \ 'relative': 'editor',
+            \ 'width': float2nr(round(0.7 * &columns)),
+            \ 'height': float2nr(round(0.7 * &lines)),
+            \ 'col': float2nr(round(0.15 * &columns)),
+            \ 'row': float2nr(round(0.15 * &lines)),
+            \ 'style': 'minimal'
+            \ }
+let g:rnvimr_presets = [{'width': 0.600, 'height': 0.600}]
+
+" ==================== vim-floaterm ====================
+nnoremap <silent> T :FloatermNew<CR>
+command! Ft :FloatermNew
+
+autocmd TermEnter term://*toggleterm#*
+      \ tnoremap <silent><c-t> <Cmd>exe v:count1 . "ToggleTerm"<CR>
 
 " 加载独特的 vim 配置
 if filereadable($HOME . '/.vim/.myvimrc')
@@ -156,6 +188,10 @@ call plug#begin()
   Plug 'tpope/vim-surround'
   Plug 'vim-airline/vim-airline'
   Plug 'mzlogin/vim-markdown-toc'
+  Plug 'kevinhwang91/rnvimr'
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  Plug 'junegunn/fzf.vim'
+  Plug 'voldikss/vim-floaterm'
 call plug#end()
 
 " 设置主题，必须放在 plug#end 后面
