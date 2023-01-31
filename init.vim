@@ -116,7 +116,7 @@ nmap <leader>s <Plug>(coc-format-selected)
 let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-markdownlint', 'coc-prettier', 'coc-rls', 'coc-java', 'coc-vimlsp']
 
 " prettier 插件的快捷键
-nmap <leader>f :CocCommand prettier.formatFile<CR>
+nmap <leader>p :CocCommand prettier.formatFile<CR>
 
 " 快速修复
 nmap <leader>qf <Plug>(coc-fix-current)
@@ -165,8 +165,18 @@ let g:rnvimr_presets = [{'width': 0.600, 'height': 0.600}]
 nnoremap <silent> T :FloatermNew<CR>
 command! Ft :FloatermNew
 
-autocmd TermEnter term://*toggleterm#*
-      \ tnoremap <silent><c-t> <Cmd>exe v:count1 . "ToggleTerm"<CR>
+" ==================== any-jump ====================
+nnoremap <leader>j :AnyJump<CR>
+
+" ====================  Telescope ====================
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
+" ==================== git-messenger ====================
+nmap <leader>gm <Plug>(git-messenger)
+let g:git_messenger_include_diff = 'current'
 
 " 加载独特的 vim 配置
 if filereadable($HOME . '/.vim/.myvimrc')
@@ -193,6 +203,9 @@ call plug#begin()
   Plug 'junegunn/fzf.vim'
   Plug 'voldikss/vim-floaterm'
   Plug 'pechorin/any-jump.vim'
+  Plug 'nvim-lua/plenary.nvim' " Required by telescope.nvim
+  Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
+  Plug 'rhysd/git-messenger.vim'
 call plug#end()
 
 " 设置主题，必须放在 plug#end 后面
