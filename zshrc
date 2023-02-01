@@ -30,7 +30,15 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
+
+# alias quick jump
 alias gh='cd $HOME'
+alias ga='cd $HOME/WorkSpace/frontend'
+alias ge='cd $HOME/WorkSpace/enterprise-frontend'
+
+# alias quick start dev server
+alias sa="cd $HOME/WorkSpace/frontend; yarn run start"
+alias se="cd $HOME/WorkSpace/enterprise-frontend; yarn run start"
 
 # alias proxychains4
 # need to install proxychains4, see https://github.com/rofl0r/proxychains-ng
@@ -54,8 +62,8 @@ alias weather='curl wttr.in/guangzhou'
 alias pssh='ps -ef | grep ssh'
 
 # alias start blog
-alias blog='cd ~/blog && bash ./start.sh'
-alias stopBlog='cd ~/blog && bash ./kill.sh'
+alias blog='cd ~/Code/blog && bash ./start.sh'
+alias stopBlog='cd ~/Code/blog && bash ./kill.sh'
 
 # alias pnpm
 alias pn="pnpm"
