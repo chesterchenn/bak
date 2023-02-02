@@ -202,7 +202,6 @@ call plug#begin()
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
   Plug 'voldikss/vim-floaterm'
-  Plug 'pechorin/any-jump.vim'
   Plug 'nvim-lua/plenary.nvim' " Required by telescope.nvim
   Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
   Plug 'rhysd/git-messenger.vim'
