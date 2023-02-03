@@ -172,7 +172,7 @@ nnoremap <leader>j :AnyJump<CR>
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
-nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+nnoremap <leader>fs <cmd>lua require('telescope.builtin').grep_string()<cr>
 
 " ==================== git-messenger ====================
 nmap <leader>gm <Plug>(git-messenger)
@@ -205,6 +205,9 @@ call plug#begin()
   Plug 'nvim-lua/plenary.nvim' " Required by telescope.nvim
   Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
   Plug 'rhysd/git-messenger.vim'
+  Plug 'pangloss/vim-javascript'
+  Plug 'maxmellon/vim-jsx-pretty'
+  Plug 'nvim-tree/nvim-web-devicons'
 call plug#end()
 
 " 设置主题，必须放在 plug#end 后面
