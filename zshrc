@@ -25,60 +25,45 @@ export LANG=en_US.UTF-8
 unsetopt beep
 
 # aliases
-alias ll='ls -alF'
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
+alias ll="ls -alF"
+alias ls="ls --color=auto"
+alias grep="grep --color=auto"
+alias fgrep="fgrep --color=auto"
+alias egrep="egrep --color=auto"
+alias puml="plantuml -svg"
+
+alias e="exit"
+alias pn="pnpm"
+alias so="source"
+alias weather="curl wttr.in/guangzhou"
+alias pssh="ps -ef | grep ssh"
 
 # alias quick jump
-alias gh='cd $HOME'
-alias ga='cd $HOME/WorkSpace/frontend'
-alias ge='cd $HOME/WorkSpace/enterprise-frontend'
+alias gh="cd $HOME"
+alias ghk="cd $HOME/Code/bak"
+alias ghb="cd $HOME/Code/blog"
+alias gwa="cd $HOME/WorkSpace/frontend"
+alias gwe="cd $HOME/WorkSpace/enterprise-frontend"
 
-# alias quick start dev server
+# alias quick start server
 alias sa="cd $HOME/WorkSpace/frontend; yarn run start"
 alias se="cd $HOME/WorkSpace/enterprise-frontend; yarn run start"
+alias blog="cd $HOME/Code/blog; bash ./start.sh"
 
-# alias proxychains4
+# alias file
+export OH_MY_ZSH="$HOME/.oh-my-zsh"
+export initvim="$HOME/.config/nvim/init.vim"
+
 # need to install proxychains4, see https://github.com/rofl0r/proxychains-ng
 alias pc="proxychains4"
-
-# alias neofetch
 # need to install neofetch, see https://github.com/dylanaraps/neofetch
 alias neo="neofetch"
-
-# alias ranger
 # need to install ranger, see https://github.com/ranger/ranger
-alias r="ranger"
-
-# alias exit
-alias e="exit"
-
-# alias
-# guangzhou weather
-alias weather='curl wttr.in/guangzhou'
-
-alias pssh='ps -ef | grep ssh'
-
-# alias start blog
-alias blog='cd ~/Code/blog && bash ./start.sh'
-alias stopBlog='cd ~/Code/blog && bash ./kill.sh'
-
-# alias pnpm
-alias pn="pnpm"
-
-# alias source
-alias so="source"
-
-# alias platuml
-alias puml="plantuml -svg"
+alias R="ranger"
 
 # Install Ruby Gems
 export GEM_HOME="$HOME/.local/share/gem"
 export PATH="$GEM_HOME/bin:$PATH"
-
-export OH_MY_ZSH="$HOME/.oh-my-zsh"
 
 # load custom config
 if [ -f ~/.my_rc ]; then
