@@ -54,6 +54,9 @@ set viminfo='50,<1000
 " 显示搜索个数
 set shortmess-=S
 
+" 取消高亮搜索
+set nohlsearch
+
 " 忽略大小写查找
 set ic
 
@@ -163,10 +166,6 @@ let g:rnvimr_presets = [{'width': 0.600, 'height': 0.600}]
 
 " ==================== vim-floaterm ====================
 nnoremap <silent> T :FloatermNew<CR>
-command! Ft :FloatermNew
-
-" ==================== any-jump ====================
-nnoremap <leader>j :AnyJump<CR>
 
 " ====================  Telescope ====================
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
@@ -214,3 +213,18 @@ call plug#end()
 colorscheme dracula
 " set background=light
 " colorscheme PaperColor
+
+lua <<EOF
+local actions = require "telescope.actions"
+require"telescope".setup({
+  defaults = {
+    mappings = {
+      i = {
+        ["<CR>"] = actions.select_tab,
+        ["<C-t>"] = actions.select_default,
+      }
+    }
+  }
+})
+EOF
+
