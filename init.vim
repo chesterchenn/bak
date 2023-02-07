@@ -18,8 +18,8 @@ syntax enable
 set showcmd
 
 " 智能缩进
-set autoindent
-" set smartindent
+" set autoindent
+set smartindent
 
 " 缩进
 set shiftwidth=2
@@ -220,19 +220,19 @@ colorscheme dracula
 " set background=light
 " colorscheme PaperColor
 
-lua <<EOF
-local actions = require "telescope.actions"
-require"telescope".setup({
-  defaults = {
-    mappings = {
-      i = {
-        ["<CR>"] = actions.select_tab,
-        ["<C-t>"] = actions.select_default,
-      },
-    },
-  }
-})
-EOF
+" lua <<EOF
+" local actions = require "telescope.actions"
+" require"telescope".setup({
+"   defaults = {
+"     mappings = {
+"       i = {
+"         ["<CR>"] = actions.select_tab,
+"         ["<C-t>"] = actions.select_default,
+"       },
+"     },
+"   }
+" })
+" EOF
 
 lua <<EOF
 require"nvim-treesitter.configs".setup {
