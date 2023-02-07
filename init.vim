@@ -177,6 +177,10 @@ nnoremap <leader>fs <cmd>lua require('telescope.builtin').grep_string()<cr>
 nmap <leader>gm <Plug>(git-messenger)
 let g:git_messenger_include_diff = 'current'
 
+" ==================== nerdtree ====================
+nnoremap <leader>nf :NERDTreeFocus<CR>
+nnoremap <leader>nt :NERDTreeToggle<CR>
+
 " 加载独特的 vim 配置
 if filereadable($HOME . '/.vim/.myvimrc')
   source $HOME/.vim/.myvimrc
@@ -207,6 +211,8 @@ call plug#begin()
   Plug 'pangloss/vim-javascript'
   Plug 'maxmellon/vim-jsx-pretty'
   Plug 'nvim-tree/nvim-web-devicons'
+  Plug 'nvim-treesitter/nvim-treesitter'
+  Plug 'preservim/nerdtree'
 call plug#end()
 
 " 设置主题，必须放在 plug#end 后面
@@ -222,9 +228,19 @@ require"telescope".setup({
       i = {
         ["<CR>"] = actions.select_tab,
         ["<C-t>"] = actions.select_default,
-      }
-    }
+      },
+    },
   }
 })
+EOF
+
+lua <<EOF
+require"nvim-treesitter.configs".setup {
+  -- one of "all", "language", or a list of languages
+  ensure_installed = {"typescript", "javascript", "java", "tsx", "json", "bash", "lua", "vim", "c"},
+  highlight = {
+    enable = true
+  }
+}
 EOF
 
