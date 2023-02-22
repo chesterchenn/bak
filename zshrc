@@ -40,8 +40,10 @@ alias pssh="ps -ef | grep ssh"
 
 # alias quick jump
 alias gh="cd $HOME"
+alias ghc="cd $HOME/Code"
 alias ghk="cd $HOME/Code/bak"
 alias ghb="cd $HOME/Code/blog"
+alias gws="cd $HOME/WorkSpace"
 alias gwa="cd $HOME/WorkSpace/frontend"
 alias gwe="cd $HOME/WorkSpace/enterprise-frontend"
 
@@ -52,6 +54,7 @@ alias blog="cd $HOME/Code/blog; bash ./start.sh"
 
 # alias file
 export OH_MY_ZSH="$HOME/.oh-my-zsh"
+export zshrc="$HOME/.zshrc"
 export initvim="$HOME/.config/nvim/init.vim"
 
 # need to install proxychains4, see https://github.com/rofl0r/proxychains-ng
