@@ -171,7 +171,7 @@ nnoremap <silent> T :FloatermNew<CR>
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
-nnoremap <leader>fs <cmd>lua require('telescope.builtin').grep_string()<cr>
+nnoremap <leader>fw <cmd>lua require('telescope.builtin').grep_string()<cr>
 
 " ==================== git-messenger ====================
 nmap <leader>gm <Plug>(git-messenger)
