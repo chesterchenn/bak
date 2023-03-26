@@ -116,7 +116,7 @@ xmap <leader>s <Plug>(coc-format-selected)
 nmap <leader>s <Plug>(coc-format-selected)
 
 " 插件
-let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-markdownlint', 'coc-prettier', 'coc-rls', 'coc-java', 'coc-vimlsp']
+let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-markdownlint', 'coc-prettier', 'coc-rls', 'coc-java', 'coc-vimlsp', 'coc-pairs']
 
 " prettier 插件的快捷键
 nmap <leader>p :CocCommand prettier.formatFile<CR>
@@ -191,24 +191,24 @@ call plug#begin()
   Plug 'ap/vim-css-color'
   Plug 'dracula/vim', {'as': 'dracula'}
   Plug 'junegunn/vim-easy-align'
-  Plug 'LunarWatcher/auto-pairs'
   Plug 'mattn/emmet-vim'
   Plug 'mg979/vim-visual-multi', {'branch': 'master'}
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'NLKNguyen/papercolor-theme'
   Plug 'powerline/powerline'
-  Plug 'tpope/vim-commentary'
+  " Plug 'tpope/vim-commentary'
+  Plug 'numToStr/Comment.nvim'
   Plug 'tpope/vim-surround'
   Plug 'vim-airline/vim-airline'
   Plug 'mzlogin/vim-markdown-toc'
   Plug 'kevinhwang91/rnvimr'
-  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-  Plug 'junegunn/fzf.vim'
+  " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  " Plug 'junegunn/fzf.vim'
   Plug 'voldikss/vim-floaterm'
   Plug 'nvim-lua/plenary.nvim' " Required by telescope.nvim
-  Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
+  Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.x' }
   Plug 'rhysd/git-messenger.vim'
-  Plug 'pangloss/vim-javascript'
+  " Plug 'pangloss/vim-javascript'
   Plug 'maxmellon/vim-jsx-pretty'
   Plug 'nvim-tree/nvim-web-devicons'
   Plug 'nvim-treesitter/nvim-treesitter'
@@ -216,9 +216,9 @@ call plug#begin()
 call plug#end()
 
 " 设置主题，必须放在 plug#end 后面
-colorscheme dracula
+" colorscheme dracula
+colorscheme PaperColor
 " set background=light
-" colorscheme PaperColor
 
 " lua <<EOF
 " local actions = require "telescope.actions"
@@ -244,3 +244,4 @@ require"nvim-treesitter.configs".setup {
 }
 EOF
 
+lua require('Comment').setup()
