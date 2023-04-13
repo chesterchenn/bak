@@ -22,7 +22,7 @@
       "commands": ["editor.action.formatSelection"]
     },
     {
-      "before": ["<leader>", "f"],
+      "before": ["<leader>", "p"],
       "commands": ["editor.action.formatDocument"]
     },
     {
