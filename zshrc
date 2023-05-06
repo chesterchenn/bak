@@ -44,13 +44,12 @@ alias ghc="cd $HOME/Code"
 alias ghk="cd $HOME/Code/bak"
 alias ghb="cd $HOME/Code/blog"
 alias gws="cd $HOME/WorkSpace"
-alias gwa="cd $HOME/WorkSpace/frontend"
-alias gwe="cd $HOME/WorkSpace/enterprise-frontend"
 
 # alias quick start server
 alias sa="cd $HOME/WorkSpace/frontend; yarn run start"
 alias se="cd $HOME/WorkSpace/enterprise-frontend; yarn run start"
 alias blog="cd $HOME/Code/blog; bash ./start.sh"
+alias stopblog="cd $HOME/Code/blog; bash ./stop.sh"
 
 # alias file
 export OH_MY_ZSH="$HOME/.oh-my-zsh"

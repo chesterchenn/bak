@@ -216,23 +216,15 @@ call plug#begin()
 call plug#end()
 
 " 设置主题，必须放在 plug#end 后面
-" colorscheme dracula
-colorscheme PaperColor
+colorscheme dracula
+" colorscheme PaperColor
 " set background=light
 
-" lua <<EOF
-" local actions = require "telescope.actions"
-" require"telescope".setup({
-"   defaults = {
-"     mappings = {
-"       i = {
-"         ["<CR>"] = actions.select_tab,
-"         ["<C-t>"] = actions.select_default,
-"       },
-"     },
-"   }
-" })
-" EOF
+lua <<EOF
+  require('telescope').setup {
+    defaults = { file_ignore_patterns = {"_site"} }
+  }
+EOF
 
 lua <<EOF
 require"nvim-treesitter.configs".setup {
