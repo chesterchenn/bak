@@ -41,5 +41,5 @@
 # export PATH=$JAVA_HOME/bin:$PATH
 
 # Update Arch Linux and yay
-# export P="sudo pacman -Syu"
-# export Y="yay -Syu"
+# alias P="sudo pacman -Syu"
+# alias Y="yay -Syu"
