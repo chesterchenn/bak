@@ -45,6 +45,8 @@ neovim 的配置文件，放在 ~/.config/nvim 目录下
 
 使用 vim-plug 安装插件，请先安装 [vim-plug](https://github.com/junegunn/vim-plug)，位于 $HOME/.local/share/nvim/site/autoload/plug.vim
 
+系统需要安装剪切板工具 xclip
+
 ## markdownlintrc
 
 markdown 格式化文件，放在 `$HOME` 目录下。
