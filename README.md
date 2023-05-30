@@ -1,21 +1,17 @@
 用于个人备份
 
-<!-- vim-markdown-toc GFM -->
-
-* [coc-settings](#coc-settings)
-* [cookie.js](#cookiejs)
-* [deb-init 和 deb-after-proxy](#deb-init-和-deb-after-proxy)
-* [editorconfig eslintrc prettierrc](#editorconfig-eslintrc-prettierrc)
-* [init.vim](#initvim)
-* [markdownlintrc](#markdownlintrc)
-* [my_rc](#my_rc)
-* [rc 与 rifle](#rc-与-rifle)
-* [vimrc](#vimrc)
-* [vscode-settings](#vscode-settings)
-* [win_sys_proxy](#win_sys_proxy)
-* [zshrc](#zshrc)
-
-<!-- vim-markdown-toc -->
+- [coc-settings](#coc-settings)
+- [cookie.js](#cookiejs)
+- [deb-init 和 deb-after-proxy](#deb-init-和-deb-after-proxy)
+- [editorconfig eslintrc prettierrc](#editorconfig-eslintrc-prettierrc)
+- [init.vim](#initvim)
+- [markdownlintrc](#markdownlintrc)
+- [my_rc](#my_rc)
+- [rc 与 rifle](#rc-与-rifle)
+- [vimrc](#vimrc)
+- [vscode-settings](#vscode-settings)
+- [win_sys_proxy](#win_sys_proxy)
+- [zshrc](#zshrc)
 
 ## coc-settings
 
@@ -47,6 +43,7 @@ neovim 的配置文件，放在 ~/.config/nvim 目录下
 
 - 系统需要安装剪切板工具 xclip
 - telescope.nvim 需要安装[BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep)
+- rnvimr 需要安装 Pynvim
 
 ## markdownlintrc
 

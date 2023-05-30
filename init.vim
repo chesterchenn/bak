@@ -116,7 +116,7 @@ xmap <leader>s <Plug>(coc-format-selected)
 nmap <leader>s <Plug>(coc-format-selected)
 
 " 插件
-let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-markdownlint', 'coc-prettier', 'coc-rls', 'coc-java', 'coc-vimlsp', 'coc-pairs']
+let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-markdownlint', 'coc-prettier', 'coc-rls', 'coc-java', 'coc-vimlsp', 'coc-pairs',  '@yaegassy/coc-volar']
 
 " prettier 插件的快捷键
 nmap <leader>p :CocCommand prettier.formatFile<CR>
