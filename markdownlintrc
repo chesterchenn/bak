@@ -1,6 +1,13 @@
 {
+  "MD013": false,
   "line_length": false,
-  "MD041": false,
+
   "MD033": false,
-  "MD024": false
+  "no-line-html": false,
+
+  "MD036": false,
+  "no-emphasis-as-header": false,
+
+  "MD041": false,
+  "first-line-h1": false
 }
