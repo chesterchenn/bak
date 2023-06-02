@@ -182,8 +182,8 @@ nnoremap <leader>nf :NERDTreeFocus<CR>
 nnoremap <leader>nt :NERDTreeToggle<CR>
 
 " 加载独特的 vim 配置
-if filereadable($HOME . '/.vim/.myvimrc')
-  source $HOME/.vim/.myvimrc
+if filereadable($HOME.'/.myvimrc')
+  source $HOME/.myvimrc
 endif
 
 " 使用 vim plug 插件
@@ -227,13 +227,13 @@ lua <<EOF
 EOF
 
 lua <<EOF
-require"nvim-treesitter.configs".setup {
-  -- one of "all", "language", or a list of languages
-  ensure_installed = {"typescript", "javascript", "java", "tsx", "json", "bash", "lua", "vim", "c", "html", "css"},
-  highlight = {
-    enable = true
+  require"nvim-treesitter.configs".setup {
+    -- one of "all", "language", or a list of languages
+    ensure_installed = {"typescript", "javascript", "java", "tsx", "json", "bash", "lua", "vim", "c", "html", "css"},
+    highlight = {
+      enable = true
+    }
   }
-}
 EOF
 
 lua require('Comment').setup()

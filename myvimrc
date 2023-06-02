@@ -1,4 +1,10 @@
-" 文件目录 $HOME/.vim/.myvimrc
+" 文件目录 $HOME/.myvimrc
 
 " 退出插入模式禁用输入法
-autocmd InsertLeave * :silent !fcitx5-remote -c
+" autocmd InsertLeave * :silent !fcitx5-remote -c
+
+" Windows 操作系统切换模式
+" autocmd VimEnter * :silent !(/mnt/d/im-select/im-select.exe 1033)
+" autocmd InsertEnter * :silent !(/mnt/d/im-select/im-select.exe 2052)
+" autocmd InsertLeave * :silent !(/mnt/d/im-select/im-select.exe 1033)
+" autocmd VimLeave * :silent !(/mnt/d/im-select/im-select.exe 2052)
