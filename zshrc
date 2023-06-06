@@ -25,11 +25,9 @@ export LANG=en_US.UTF-8
 unsetopt beep
 
 # aliases
-alias ll="ls -alF"
 alias ls="ls --color=auto"
+alias ll="ls -al"
 alias grep="grep --color=auto"
-alias fgrep="fgrep --color=auto"
-alias egrep="egrep --color=auto"
 alias puml="plantuml -svg"
 
 alias e="exit"
@@ -43,11 +41,9 @@ alias gh="cd $HOME"
 alias ghc="cd $HOME/Code"
 alias ghk="cd $HOME/Code/bak"
 alias ghb="cd $HOME/Code/blog"
-alias gws="cd $HOME/WorkSpace"
+alias gw="cd $HOME/WorkSpace"
 
 # alias quick start server
-alias sa="cd $HOME/WorkSpace/frontend; yarn run start"
-alias se="cd $HOME/WorkSpace/enterprise-frontend; yarn run start"
 alias blog="cd $HOME/Code/blog; bash ./start.sh"
 alias stopblog="cd $HOME/Code/blog; bash ./stop.sh"
 
