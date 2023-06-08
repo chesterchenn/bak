@@ -1,5 +1,5 @@
 {
-  "javascript.suggestionActions.enabled": false,
+  "javascript.suggestionActions.enabled": true,
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "json",
@@ -7,6 +7,8 @@
     "javascript",
     "typescript",
     "javascriptreact",
-    "typescriptreact"
-  ]
+    "typescriptreact",
+    "python"
+  ],
+  "python.formatting.provider": "yapf"
 }
