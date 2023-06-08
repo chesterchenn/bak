@@ -58,6 +58,7 @@ alias pc="proxychains4"
 alias neo="neofetch"
 # need to install ranger, see https://github.com/ranger/ranger
 alias R="ranger"
+alias py="python3"
 
 # Install Ruby Gems
 export GEM_HOME="$HOME/.local/share/gem"
