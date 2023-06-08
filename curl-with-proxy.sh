@@ -1,3 +1,4 @@
+#!/bin/bash
 # 代理安装
 # 部分资源需要请求 githubusercontent 等网站
 

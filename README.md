@@ -2,7 +2,8 @@
 
 - [coc-settings](#coc-settings)
 - [cookie.js](#cookiejs)
-- [deb-init 和 deb-after-proxy](#deb-init-和-deb-after-proxy)
+- [deb-init](#deb-init)
+- [curl-with-proxy](#curl-with-proxy)
 - [editorconfig eslintrc prettierrc](#editorconfig-eslintrc-prettierrc)
 - [init.vim](#initvim)
 - [markdownlintrc](#markdownlintrc)
@@ -23,11 +24,13 @@ vim coc 插件的配置 coc-settings.json，需要安装 coc-json，一般放在
 
 电脑登陆京东获取对应的 `pt_key` 和 `pt_pin`，运行脚本生成对应环境变量。
 
-## deb-init 和 deb-after-proxy
+## deb-init
 
 deb-init 用于自动化安装 debian 系的软件，主要用于 wsl。
 
-deb-after-proxy 用于配置好代理之后安装的软件。
+## curl-with-proxy
+
+curl-with-proxy 用于配置好代理之后安装的软件。
 
 ## editorconfig eslintrc prettierrc
 
@@ -42,8 +45,8 @@ neovim 的配置文件，放在 ~/.config/nvim 目录下
 使用 vim-plug 安装插件，请先安装 [vim-plug](https://github.com/junegunn/vim-plug)，位于 $HOME/.local/share/nvim/site/autoload/plug.vim
 
 - 系统需要安装剪切板工具 xclip
-- telescope.nvim 需要安装[BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep)
-- rnvimr 需要安装 Pynvim
+- telescope.nvim 需要安装 [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep)
+- rnvimr 需要安装 [Pynvim](https://github.com/neovim/pynvim)
 
 ## markdownlintrc
 
