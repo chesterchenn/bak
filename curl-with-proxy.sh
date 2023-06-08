@@ -1,20 +1,11 @@
-# 以下最好在安装代理后进行安装
+# 代理安装
+# 部分资源需要请求 githubusercontent 等网站
 
 read -p "请输入代理的命令：" proxy
 
-# 安装 ohmyzsh
-echo "安装 ohmyzsh"
-ohmyzshFile=~/.oh-my-zsh
-if [ -e $ohmyzshFile ]; then
-  echo "oh-my-zsh 已经存在\n"
-else
-  sh -c "$($proxy curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-  echo "vim-plug 安装结束\n"
-fi
-
-# 安装 vimPlug
+# 安装 neovim Plug
 echo "安装 vim-plug"
-plugFile=~/.vim/autoload/plug.vim
+plugFile=$HOME/.config/nvim/autoload/plug.vim
 if [ -e $plugFile ]; then
   echo "vim-plug 已经存在"
 else
@@ -38,3 +29,12 @@ else
   echo "n 和 node 安装成功"
 fi
 
+# 安装 ohmyzsh
+echo "安装 ohmyzsh"
+ohmyzshFile=~/.oh-my-zsh
+if [ -e $ohmyzshFile ]; then
+  echo "oh-my-zsh 已经存在\n"
+else
+  sh -c "$($proxy curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  echo "ohmyzsh 安装结束\n"
+fi
