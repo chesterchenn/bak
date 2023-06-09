@@ -39,9 +39,10 @@ alias pssh="ps -ef | grep ssh"
 # alias quick jump
 alias gh="cd $HOME"
 alias ghc="cd $HOME/Code"
+alias gws="cd $HOME/WorkSpace"
+alias gge="cd $HOME/Gitee"
 alias ghk="cd $HOME/Code/bak"
 alias ghb="cd $HOME/Code/blog"
-alias gw="cd $HOME/WorkSpace"
 
 # alias quick start server
 alias blog="cd $HOME/Code/blog; bash ./start.sh"
@@ -69,7 +70,7 @@ if [ -f ~/.my_rc ]; then
   source ~/.my_rc
 fi
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH:$Home/.local/bin"
 
 # 启用 oh-my-zsh
 source $ZSH/oh-my-zsh.sh
