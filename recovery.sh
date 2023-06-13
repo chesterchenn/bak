@@ -65,7 +65,7 @@ cp ./prettierrc $HOME/.prettierrc
 echo "开始恢复ranger配置"
 mkdir -p $HOME/.config/ranger
 cp ./rc.conf $HOME/.config/ranger/rc.conf
-cp ./ringer.conf $HOME/.config/ranger/ringer.conf
+cp ./rifle.conf $HOME/.config/ranger/rifle.conf
 
 echo "开始恢复vimrc"
 cp ./vimrc $HOME/.vimrc
