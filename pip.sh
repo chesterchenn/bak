@@ -1,3 +1,3 @@
 #!/bin/bash
 
-pip3 install --upgrade pynvim yapf
+pip3 install --upgrade --user pynvim yapf
