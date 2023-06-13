@@ -43,3 +43,5 @@
 # Update Arch Linux and yay
 # alias P="sudo pacman -Syu"
 # alias Y="yay -Syu"
+#
+# export npm_config_platform=win32

@@ -77,3 +77,6 @@ source $ZSH/oh-my-zsh.sh
 
 export VISUAL=nvim
 export EDITOR=nvim
+
+# install electron from taobao
+export ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/
