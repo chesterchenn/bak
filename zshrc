@@ -28,7 +28,7 @@ unsetopt beep
 alias ls="ls --color=auto"
 alias ll="ls -al"
 alias grep="grep --color=auto"
-alias puml="plantuml -svg"
+alias puml="plantuml -charset UTF-8 -svg"
 
 alias e="exit"
 alias pn="pnpm"
@@ -80,3 +80,4 @@ export EDITOR=nvim
 
 # install electron from taobao
 export ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/
+export ELECTRON_BUILDER_BINARIES_MIRROR=https://npmmirror.com/mirrors/electron/
