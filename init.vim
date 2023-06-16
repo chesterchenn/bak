@@ -181,6 +181,10 @@ let g:git_messenger_include_diff = 'current'
 nnoremap <leader>nf :NERDTreeFocus<CR>
 nnoremap <leader>nt :NERDTreeToggle<CR>
 
+" ==================== vim-markdown-toc ====================
+let g:vmt_list_item_char = '-'
+nnoremap <leader>tg :GenTocGFM<CR>
+
 " 加载独特的 vim 配置
 if filereadable($HOME.'/.myvimrc')
   source $HOME/.myvimrc
