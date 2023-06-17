@@ -70,7 +70,7 @@ if [ -f ~/.my_rc ]; then
   source ~/.my_rc
 fi
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH:$Home/.local/bin"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.local/bin:$PATH"
 
 # 启用 oh-my-zsh
 source $ZSH/oh-my-zsh.sh
