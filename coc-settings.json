@@ -1,5 +1,5 @@
 {
-  "javascript.suggestionActions.enabled": true,
+  "javascript.suggestionActions.enabled": false,
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "json",
