@@ -183,6 +183,7 @@ nnoremap <leader>nt :NERDTreeToggle<CR>
 
 " ==================== vim-markdown-toc ====================
 let g:vmt_list_item_char = '-'
+let g:vmt_list_indent_text = '  '
 nnoremap <leader>tg :GenTocGFM<CR>
 nnoremap <leader>tu :UpdateToc<CR>
 
