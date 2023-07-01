@@ -70,6 +70,13 @@ let mapleader="\<Space>"
 nnoremap Q :q<CR>
 nnoremap S :w<CR>
 
+" 设置折叠
+set foldmethod=indent
+set foldlevel=99
+set foldenable
+nmap <leader>fc <cmd>foldclose<CR>
+nmap <leader>fo <cmd>foldopen<CR>
+
 " ==================== coc ====================
 " 使用 TAB 选择
 inoremap <silent><expr> <TAB>
