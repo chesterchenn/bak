@@ -34,7 +34,8 @@ alias e="exit"
 alias pn="pnpm"
 alias so="source"
 alias weather="curl wttr.in/guangzhou"
-alias pssh="ps -ef | grep ssh"
+alias plp="ps -ef | grep autossh"
+alias klp="kill $(ps -ef | grep autossh | awk 'NR==1{print $2}')"
 
 # alias quick jump
 alias gh="cd $HOME"
