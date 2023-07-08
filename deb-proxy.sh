@@ -17,7 +17,7 @@ fi
 # 安装 node 版本管理器
 echo "安装 node 版本管理器 n"
 if [ -e ~/n ]; then
-  echo "n 已经存在，请运行 bash n"
+  echo "版本管理器 n 已经存在"
 else
   # make cache folder (if missing) and take ownership
   sudo mkdir -p /usr/local/n
@@ -34,41 +34,8 @@ fi
 echo "安装 ohmyzsh"
 ohmyzshFile=~/.oh-my-zsh
 if [ -e $ohmyzshFile ]; then
-  echo "oh-my-zsh 已经存在\n"
+  echo "oh-my-zsh 已经存在"
 else
   sh -c "$($proxy curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-  echo "ohmyzsh 安装结束\n"
+  echo "ohmyzsh 安装结束"
 fi
-
-# 众神归位
-echo "开始恢复配置"
-echo "恢复coc-settings"
-mkdir -p $HOME/.config/nvim
-cp ./coc-settings.json $HOME/.config/nvim/coc-settings.json
-
-echo "开始恢复init.vim"
-cp ./init.vim $HOME/.config/nvim/init.vim
-
-echo "开始恢复markdownlintrc"
-cp ./markdownlintrc $HOME/.markdownlintrc
-
-echo "开始恢复my_rc"
-if [ -e $HOME/.my_rc ]; then
-  echo "my_rc 已经存在\n"
-else
-  cp ./my_rc $HOME/.my_rc
-fi
-
-echo "开始prettierc"
-cp ./prettierrc $HOME/.prettierrc
-
-echo "开始恢复ranger配置"
-mkdir -p $HOME/.config/ranger
-cp ./rc.conf $HOME/.config/ranger/rc.conf
-cp ./rifle.conf $HOME/.config/ranger/rifle.conf
-
-echo "开始恢复vimrc"
-cp ./vimrc $HOME/.vimrc
-
-echo "开始恢复zshrc"
-cp ./zshrc $HOME/.zshrc

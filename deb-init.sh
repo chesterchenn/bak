@@ -4,7 +4,7 @@
 echo "生成秘钥"
 sshFile=~/.ssh/id_rsa
 if [ -e $sshFile ]; then
-  echo "$sshFile 已经存在\n"
+  echo "$sshFile 已经存在"
 else
   ssh-keygen
 fi
@@ -31,6 +31,6 @@ if [ $SHELL != $(which zsh) ]; then
   chsh -s $(which zsh)
   echo "设置 zsh 成功"
 else
-  echo "当前 shell 为 $SHELL\n"
+  echo "当前 shell 为 $SHELL"
 fi
 
