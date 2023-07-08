@@ -1,18 +1,24 @@
-用于个人备份
+# 个人备份
+
+<!-- vim-markdown-toc GFM -->
 
 - [coc-settings](#coc-settings)
 - [cookie.js](#cookiejs)
 - [deb-init](#deb-init)
+- [deb-proxy](#deb-proxy)
 - [curl-with-proxy](#curl-with-proxy)
 - [editorconfig eslintrc prettierrc](#editorconfig-eslintrc-prettierrc)
 - [init.vim](#initvim)
 - [markdownlintrc](#markdownlintrc)
 - [my_rc](#my_rc)
 - [rc 与 rifle](#rc-与-rifle)
+- [retore](#retore)
 - [vimrc](#vimrc)
 - [vscode-settings](#vscode-settings)
 - [win_sys_proxy](#win_sys_proxy)
 - [zshrc](#zshrc)
+
+<!-- vim-markdown-toc -->
 
 ## coc-settings
 
@@ -27,6 +33,10 @@ vim coc 插件的配置 coc-settings.json，需要安装 coc-json，一般放在
 ## deb-init
 
 deb-init 用于自动化安装 debian 系的软件，主要用于 wsl。
+
+## deb-proxy
+
+用于代理进行安装 debian 系的软件，主要用于 wsl。
 
 ## curl-with-proxy
 
@@ -59,6 +69,10 @@ markdown 格式化文件，放在 `$HOME` 目录下。
 ## rc 与 rifle
 
 ranger 的配置文件，放在 ~/.config/ranger 目录下
+
+## retore
+
+restore 进行配置文件同步
 
 ## vimrc
 
