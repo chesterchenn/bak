@@ -28,7 +28,8 @@ unsetopt beep
 alias ls="ls --color=auto"
 alias ll="ls -al"
 alias grep="grep --color=auto"
-alias puml="plantuml -charset UTF-8 -svg"
+alias puml="plantuml -charset UTF-8"
+alias pumlsvg="plantuml -charset UTF-8 -svg"
 
 alias e="exit"
 alias pn="pnpm"
