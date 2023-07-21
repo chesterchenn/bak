@@ -18,8 +18,10 @@ ZSH_THEME="random"
 plugins=(git bundler)
 
 # You may need to manually set your language environment
-export LANG=en_US.UTF-8
+export LANG="en_US.UTF-8"
 # export LANG=zh_CN.UTF-8
+export LC_ALL="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"
 
 # mute system
 unsetopt beep
@@ -37,6 +39,7 @@ alias so="source"
 alias weather="curl wttr.in/guangzhou"
 alias plp="ps -ef | grep autossh"
 alias klp="kill $(ps -ef | grep autossh | awk 'NR==1{print $2}')"
+alias ys="yarn run start"
 
 # alias quick jump
 alias gh="cd $HOME"
@@ -85,3 +88,5 @@ export ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/
 export ELECTRON_BUILDER_BINARIES_MIRROR=https://npmmirror.com/mirrors/electron/
 
 export LESSCHARSET=utf-8
+
+export LD_LIBRARY_PATH="/usr/local/pgsql/lib"
