@@ -219,12 +219,12 @@ call plug#begin()
   " Plug 'junegunn/fzf.vim'
   Plug 'voldikss/vim-floaterm'
   Plug 'nvim-lua/plenary.nvim' " Required by telescope.nvim
-  Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.x' }
+  Plug 'nvim-telescope/telescope.nvim', {'tag': '0.1.x'}
   Plug 'rhysd/git-messenger.vim'
   " Plug 'pangloss/vim-javascript'
   Plug 'maxmellon/vim-jsx-pretty'
   Plug 'nvim-tree/nvim-web-devicons'
-  Plug 'nvim-treesitter/nvim-treesitter'
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'preservim/nerdtree'
   Plug 'Exafunction/codeium.vim'
 call plug#end()
