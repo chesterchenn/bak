@@ -180,10 +180,6 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fw <cmd>lua require('telescope.builtin').grep_string()<cr>
 
-" ==================== git-messenger ====================
-nmap <leader>gm <Plug>(git-messenger)
-let g:git_messenger_include_diff = 'current'
-
 " ==================== nerdtree ====================
 nnoremap <leader>nf :NERDTreeFocus<CR>
 nnoremap <leader>nt :NERDTreeToggle<CR>
@@ -220,13 +216,13 @@ call plug#begin()
   Plug 'voldikss/vim-floaterm'
   Plug 'nvim-lua/plenary.nvim' " Required by telescope.nvim
   Plug 'nvim-telescope/telescope.nvim', {'tag': '0.1.x'}
-  Plug 'rhysd/git-messenger.vim'
-  " Plug 'pangloss/vim-javascript'
   Plug 'maxmellon/vim-jsx-pretty'
   Plug 'nvim-tree/nvim-web-devicons'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'preservim/nerdtree'
   Plug 'Exafunction/codeium.vim'
+  Plug 'f-person/git-blame.nvim'
+  Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 " 设置主题，必须放在 plug#end 后面
