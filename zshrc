@@ -85,7 +85,7 @@ export EDITOR=nvim
 
 # install electron from taobao
 export ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/
-export ELECTRON_BUILDER_BINARIES_MIRROR=https://npmmirror.com/mirrors/electron/
+export ELECTRON_BUILDER_BINARIES_MIRROR=https://npmmirror.com/mirrors/electron-builder-binaries/
 
 export LESSCHARSET=utf-8
 
