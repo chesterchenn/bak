@@ -220,9 +220,9 @@ call plug#begin()
   Plug 'nvim-tree/nvim-web-devicons'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'preservim/nerdtree'
-  Plug 'Exafunction/codeium.vim'
   Plug 'f-person/git-blame.nvim'
   Plug 'airblade/vim-gitgutter'
+  Plug 'github/copilot.vim'
 call plug#end()
 
 " 设置主题，必须放在 plug#end 后面
