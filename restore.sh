@@ -34,3 +34,6 @@ cp ./vimrc $HOME/.vimrc
 
 echo "开始恢复zshrc"
 cp ./zshrc $HOME/.zshrc
+
+echo "开始恢复tmux.conf"
+cp ./tmux.conf $HOME/.tmux.conf

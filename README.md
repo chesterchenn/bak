@@ -13,6 +13,7 @@
 - [my_rc](#my_rc)
 - [rc 与 rifle](#rc-与-rifle)
 - [retore](#retore)
+- [tmux](#tmux)
 - [vimrc](#vimrc)
 - [vscode-settings](#vscode-settings)
 - [win_sys_proxy](#win_sys_proxy)
@@ -73,6 +74,10 @@ ranger 的配置文件，放在 ~/.config/ranger 目录下
 ## retore
 
 restore 进行配置文件同步
+
+## tmux
+
+tmux.conf 配置文件
 
 ## vimrc
 
