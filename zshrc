@@ -22,6 +22,7 @@ export LANG="en_US.UTF-8"
 # export LANG=zh_CN.UTF-8
 export LC_ALL="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
+export LESSCHARSET="utf-8"
 
 # mute system
 unsetopt beep
@@ -87,6 +88,8 @@ export EDITOR=nvim
 export ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/
 export ELECTRON_BUILDER_BINARIES_MIRROR=https://npmmirror.com/mirrors/electron-builder-binaries/
 
-export LESSCHARSET=utf-8
+# 登录远程系统
+alias login="ssh $user@$host"
 
-export LD_LIBRARY_PATH="/usr/local/pgsql/lib"
+# 开启远程服务器代理
+alias lp="autossh -M 7700 -D 7891 $user@$host -N -f"
