@@ -93,3 +93,9 @@ alias login="ssh $user@$host"
 
 # 开启远程服务器代理
 alias lp="autossh -M 7700 -D 7891 $user@$host -N -f"
+
+# start tmux when open terminal
+if [ "$TMUX" = "" ];
+  then tmux;
+fi
+
