@@ -232,7 +232,8 @@ colorscheme dracula
 
 lua <<EOF
   require('telescope').setup {
-    defaults = { file_ignore_patterns = {"_site"} }
+    -- ignore images
+    defaults = { file_ignore_patterns = {"_site", ".jpg", ".png", ".svg", ".gif", ".ico"} }
   }
 EOF
 
