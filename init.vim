@@ -180,15 +180,16 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fw <cmd>lua require('telescope.builtin').grep_string()<cr>
 
-" ==================== nerdtree ====================
-nnoremap <leader>nf :NERDTreeFocus<CR>
-nnoremap <leader>nt :NERDTreeToggle<CR>
+" ==================== nvim-tree ====================
+nnoremap <leader>tt <cmd>NvimTreeToggle<cr>
+nnoremap <leader>tf <cmd>NvimTreeFocus<cr>
+nnoremap <leader>te <cmd>NvimTreeFindFile<cr>
+nnoremap <leader>tc <cmd>NvimTreeCollapse<cr>
 
 " ==================== vim-markdown-toc ====================
 let g:vmt_list_item_char = '-'
 let g:vmt_list_indent_text = '  '
-nnoremap <leader>tg :GenTocGFM<CR>
-nnoremap <leader>tu :UpdateToc<CR>
+nnoremap <leader>toc :GenTocGFM<CR>
 
 " 加载独特的 vim 配置
 if filereadable($HOME.'/.myvimrc')
@@ -217,9 +218,9 @@ call plug#begin()
   Plug 'nvim-lua/plenary.nvim' " Required by telescope.nvim
   Plug 'nvim-telescope/telescope.nvim', {'tag': '0.1.x'}
   Plug 'maxmellon/vim-jsx-pretty'
-  Plug 'nvim-tree/nvim-web-devicons'
+  Plug 'nvim-tree/nvim-tree.lua'
+  Plug 'nvim-tree/nvim-web-devicons' " optional
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-  Plug 'preservim/nerdtree'
   Plug 'f-person/git-blame.nvim'
   Plug 'airblade/vim-gitgutter'
   Plug 'github/copilot.vim'
@@ -229,6 +230,7 @@ call plug#end()
 colorscheme dracula
 " colorscheme PaperColor
 " set background=light
+
 
 lua <<EOF
   require('telescope').setup {
@@ -248,3 +250,29 @@ lua <<EOF
 EOF
 
 lua require('Comment').setup()
+
+lua <<EOF
+-- disable netrw at the very start of your init.lua
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+-- set termguicolors to enable highlight groups
+vim.opt.termguicolors = true
+
+-- empty setup using defaults
+require("nvim-tree").setup()
+
+-- OR setup with some options
+require("nvim-tree").setup({
+  sort_by = "case_sensitive",
+  view = {
+    width = 30,
+  },
+  renderer = {
+    group_empty = true,
+  },
+  filters = {
+    dotfiles = true,
+  },
+})
+EOF
