@@ -16,5 +16,12 @@
   "no-emphasis-as-header": false,
 
   "MD041": false,
-  "first-line-h1": false
+  "first-line-h1": false,
+
+  "MD049": "asterisk",
+  "emphasis-style": "asterisk",
+
+
+  "MD050": "asterisk",
+  "strong-style": "asterisk"
 }
