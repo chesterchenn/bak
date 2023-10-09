@@ -10,12 +10,16 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="random"
 
+# ohmyzsh tmux plugin config
+ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOCONNECT=true
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git bundler)
+plugins=(git bundler tmux)
 
 # You may need to manually set your language environment
 export LANG="en_US.UTF-8"
@@ -93,9 +97,4 @@ alias login="ssh $user@$host"
 
 # 开启远程服务器代理
 alias lp="autossh -M 7700 -D 7891 $user@$host -N -f"
-
-# start tmux when open terminal
-if [ "$TMUX" = "" ];
-  then tmux;
-fi
 
