@@ -191,6 +191,9 @@ let g:vmt_list_item_char = '-'
 let g:vmt_list_indent_text = '  '
 nnoremap <leader>toc :GenTocGFM<CR>
 
+" ==================== copilot ====================
+" let g:copilot_proxy = 'socks5:localhost:7891'
+
 " 加载独特的 vim 配置
 if filereadable($HOME.'/.myvimrc')
   source $HOME/.myvimrc
@@ -206,7 +209,6 @@ call plug#begin()
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'NLKNguyen/papercolor-theme'
   Plug 'powerline/powerline'
-  " Plug 'tpope/vim-commentary'
   Plug 'numToStr/Comment.nvim'
   Plug 'tpope/vim-surround'
   Plug 'vim-airline/vim-airline'
@@ -231,11 +233,10 @@ colorscheme dracula
 " colorscheme PaperColor
 " set background=light
 
-
 lua <<EOF
   require('telescope').setup {
     -- ignore images
-    defaults = { file_ignore_patterns = {"_site", ".jpg", ".png", ".svg", ".gif", ".ico"} }
+    defaults = { file_ignore_patterns = {"_site", ".jpg", ".png", ".svg", ".gif", ".ico", ".webp"} }
   }
 EOF
 
