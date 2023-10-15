@@ -79,6 +79,14 @@ restore 进行配置文件同步
 
 tmux.conf 配置文件
 
+tmux 插件管理：[tpm](https://github.com/tmux-plugins/tpm)
+
+```shell
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+使用 `prefix` + `I`（大写）进行安装插件
+
 ## vimrc
 
 当前跟 init.vim 保持同步
