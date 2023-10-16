@@ -47,12 +47,12 @@ alias klp="kill $(ps -ef | grep autossh | awk 'NR==1{print $2}')"
 alias ys="yarn run start"
 
 # alias quick jump
-alias gh="cd $HOME"
-alias ghc="cd $HOME/Code"
-alias gws="cd $HOME/WorkSpace"
-alias gge="cd $HOME/Gitee"
-alias ghk="cd $HOME/Code/bak"
-alias ghb="cd $HOME/Code/blog"
+alias ch="cd $HOME"
+alias cc="cd $HOME/Code"
+alias cw="cd $HOME/WorkSpace"
+alias cg="cd $HOME/Gitee"
+alias cck="cd $HOME/Code/bak"
+alias ccb="cd $HOME/Code/blog"
 
 # alias quick start server
 alias blog="cd $HOME/Code/blog; bash ./start.sh"
