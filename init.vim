@@ -226,12 +226,14 @@ call plug#begin()
   Plug 'f-person/git-blame.nvim'
   Plug 'airblade/vim-gitgutter'
   Plug 'github/copilot.vim'
+  Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 call plug#end()
 
 " 设置主题，必须放在 plug#end 后面
-colorscheme dracula
+" colorscheme dracula
 " colorscheme PaperColor
 " set background=light
+colorscheme catppuccin-macchiato
 
 lua <<EOF
   require('telescope').setup {
