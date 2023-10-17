@@ -51,6 +51,7 @@ alias ch="cd $HOME"
 alias cc="cd $HOME/Code"
 alias cw="cd $HOME/WorkSpace"
 alias cg="cd $HOME/Gitee"
+alias cr="cd $HOME/Repo"
 alias cck="cd $HOME/Code/bak"
 alias ccb="cd $HOME/Code/blog"
 
