@@ -1,4 +1,5 @@
 " 文件目录 $HOME/.myvimrc
+" 文件目录 $HOME/.config/nvim/.myvimrc
 
 " 退出插入模式禁用输入法
 " autocmd InsertLeave * :silent !fcitx5-remote -c

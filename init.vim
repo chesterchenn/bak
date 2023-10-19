@@ -195,8 +195,8 @@ nnoremap <leader>toc :GenTocGFM<CR>
 " let g:copilot_proxy = 'socks5:localhost:7891'
 
 " 加载独特的 vim 配置
-if filereadable($HOME.'/.myvimrc')
-  source $HOME/.myvimrc
+if filereadable(expand("$HOME/.config/nvim/.myvimrc"))
+  source $HOME/.config/nvim/.myvimrc
 endif
 
 " 使用 vim plug 插件
