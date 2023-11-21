@@ -42,8 +42,6 @@ alias e="exit"
 alias pn="pnpm"
 alias so="source"
 alias weather="curl wttr.in/guangzhou"
-alias plp="ps -ef | grep autossh"
-alias klp="kill $(ps -ef | grep autossh | awk 'NR==1{print $2}')"
 alias ys="yarn run start"
 
 # alias quick jump
@@ -96,6 +94,9 @@ export ELECTRON_BUILDER_BINARIES_MIRROR=https://npmmirror.com/mirrors/electron-b
 # 登录远程系统
 alias login="ssh $user@$host"
 
-# 开启远程服务器代理
+# 远程服务器端口转发
 alias lp="autossh -M 7700 -D 7891 $user@$host -N -f"
+alias plp="ps -ef | grep autossh"
+alias klp="kill $(ps -ef | grep autossh | awk 'NR==1{print $2}')"
+alias tlp="echo -e '\x1dclose\x0d' | proxychains4 telnet google.com 80"
 
