@@ -10,10 +10,6 @@
   "editor.formatOnSave": true,
   "vim.normalModeKeyBindings": [
     {
-      "before": ["<leader>", "s"],
-      "commands": ["editor.action.formatSelection"]
-    },
-    {
       "before": ["<leader>", "p"],
       "commands": ["editor.action.formatDocument"]
     },
@@ -30,10 +26,6 @@
     {
       "before": ["<leader>", "s"],
       "commands": ["editor.action.formatSelection"]
-    },
-    {
-      "before": ["<leader>", "f"],
-      "commands": ["editor.action.formatDocument"]
     }
   ]
 }
