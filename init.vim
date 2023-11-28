@@ -227,6 +227,7 @@ call plug#begin()
   Plug 'airblade/vim-gitgutter'
   Plug 'github/copilot.vim'
   Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+  Plug 'norcalli/nvim-colorizer.lua'
 call plug#end()
 
 " 设置主题，必须放在 plug#end 后面
@@ -254,6 +255,8 @@ EOF
 
 lua require('Comment').setup()
 
+lua require'colorizer'.setup()
+
 lua <<EOF
 -- disable netrw at the very start of your init.lua
 vim.g.loaded_netrw = 1
@@ -261,9 +264,6 @@ vim.g.loaded_netrwPlugin = 1
 
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
-
--- empty setup using defaults
-require("nvim-tree").setup()
 
 -- OR setup with some options
 require("nvim-tree").setup({
