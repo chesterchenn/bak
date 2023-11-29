@@ -116,6 +116,8 @@ vscode 配置文件。
 
 windows 系统代理设置以及取消脚本。
 
+设置之后可以在 wsl 里面 `ping google.com` 或者打开浏览器测试 google
+
 ## zshrc
 
 配合 [oh my zsh](https://github.com/ohmyzsh/ohmyzsh) 使用
