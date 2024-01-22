@@ -100,3 +100,5 @@ alias plp="ps -ef | grep autossh"
 alias klp="kill $(ps -ef | grep autossh | awk 'NR==1{print $2}')"
 alias tlp="echo -e '\x1dclose\x0d' | proxychains4 telnet google.com 80"
 
+# tmux 快捷命令
+alias tkp='tmux kill-pane -t'
