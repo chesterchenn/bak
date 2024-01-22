@@ -98,10 +98,9 @@ alias login="ssh $user@$host"
 function get_authssh_port() {
   ps -ef | grep autossh | grep -v grep | awk 'NR==1{print $2}'
 }
-
 alias lp="autossh -M 7700 -D 7891 $user@$host -N -f"
-alias plp="ps -ef | grep autossh"
-alias klp="kill $(get_authssh_port)"
+alias plp="ps -ef | grep autossh | grep -v grep"
+alias klp="kill '$(get_authssh_port)'"
 alias tlp="echo -e '\x1dclose\x0d' | proxychains4 telnet google.com 80"
 
 # tmux 快捷命令
