@@ -105,3 +105,6 @@ alias tlp="echo -e '\x1dclose\x0d' | proxychains4 telnet google.com 80"
 
 # tmux 快捷命令
 alias tkp='tmux kill-pane -t'
+
+# 查询 IPv4 地址
+alias ip4="dig +short myip.opendns.com @resolver1.opendns.com"
