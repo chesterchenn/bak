@@ -52,6 +52,7 @@ alias cg="cd $HOME/Gitee"
 alias cr="cd $HOME/Repo"
 alias cck="cd $HOME/Code/bak"
 alias ccb="cd $HOME/Code/blog"
+alias coc="cd $HOME/Code/coc"
 
 # alias quick start server
 alias blog="cd $HOME/Code/blog; bash ./start.sh"
