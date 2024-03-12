@@ -41,6 +41,7 @@ alias pumlsvg="plantuml -charset UTF-8 -svg"
 alias e="exit"
 alias pn="pnpm"
 alias so="source"
+alias S="source $HOME/.zshrc"
 alias weather="curl wttr.in/guangzhou"
 alias ys="yarn run start"
 
