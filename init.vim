@@ -225,7 +225,8 @@ call plug#begin()
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'f-person/git-blame.nvim'
   Plug 'airblade/vim-gitgutter'
-  Plug 'github/copilot.vim'
+  " Plug 'github/copilot.vim'
+  Plug 'Exafunction/codeium.vim', { 'branch': 'main' }
   Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
   Plug 'norcalli/nvim-colorizer.lua'
 call plug#end()
