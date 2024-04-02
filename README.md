@@ -57,8 +57,6 @@ curl-with-proxy 用于配置好代理之后安装的软件。
 
 ## init.vim
 
-当前跟 vimrc 保持同步
-
 neovim 的配置文件，放在 ~/.config/nvim 目录下
 
 使用 vim-plug 安装插件，请先安装 [vim-plug](https://github.com/junegunn/vim-plug)，位于 $HOME/.local/share/nvim/site/autoload/plug.vim
@@ -97,16 +95,9 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 ## vimrc
 
-当前跟 init.vim 保持同步
+配置文件位于 `~/.vimrc`
 
-使用 vim-plug 安装插件，请先安装 [vim-plug](https://github.com/junegunn/vim-plug)，位于 $HOME/.vim/autoload/plug.vim
-
-```shell
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
-
-`coc.nvim` 需要安装 `nodejs`，请使用 [n](https://github.com/tj/n)
+vimrc 无插件，无需安装，适用于快速使用的环境
 
 ## vscode-settings
 
