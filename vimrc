@@ -70,6 +70,11 @@ let mapleader="\<Space>"
 nnoremap Q :q<CR>
 nnoremap S :w<CR>
 
+set t_Co=256
+hi CursorLine ctermfg=NONE ctermbg=235 cterm=NONE
+hi CursorLineNr ctermfg=white ctermbg=235 cterm=NONE guibg=NONE guifg=yellow
+
+
 " 加载独特的 vim 配置
 if filereadable($HOME.'/.myvimrc')
   source $HOME/.myvimrc
