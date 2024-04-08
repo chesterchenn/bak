@@ -179,6 +179,7 @@ nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fw <cmd>lua require('telescope.builtin').grep_string()<cr>
+nnoremap <leader>sm <cmd>Telescope marks<cr>
 
 " ==================== nvim-tree ====================
 nnoremap <leader>tt <cmd>NvimTreeToggle<cr>
