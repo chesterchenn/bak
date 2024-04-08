@@ -23,6 +23,10 @@
     {
       "before": ["Q"],
       "commands": [":q"]
+    },
+    {
+      "before": ["<leader>", "s", "m"],
+      "commands": [":marks"]
     }
   ],
   "vim.visualModeKeyBindings": [
