@@ -4,20 +4,20 @@
 
 - [测试颜色](#测试颜色)
 - [coc-settings](#coc-settings)
-- [cookie.js](#cookiejs)
 - [deb-init](#deb-init)
 - [deb-proxy](#deb-proxy)
-- [curl-with-proxy](#curl-with-proxy)
 - [editorconfig eslintrc prettierrc](#editorconfig-eslintrc-prettierrc)
 - [init.vim](#initvim)
 - [markdownlintrc](#markdownlintrc)
 - [my_rc](#my_rc)
+- [myvimrc](#myvimrc)
 - [rc 与 rifle](#rc-与-rifle)
 - [retore](#retore)
 - [tmux](#tmux)
 - [vimrc](#vimrc)
 - [vscode-settings](#vscode-settings)
 - [win_sys_proxy](#win_sys_proxy)
+- [xiaohe.reg](#xiaohereg)
 - [zshrc](#zshrc)
 
 <!-- vim-markdown-toc -->
@@ -33,12 +33,6 @@ bash 24-bit-color.sh
 
 vim coc 插件的配置 coc-settings.json，需要安装 coc-json，一般放在 .vim（neovim 放在 ~/.config/nvim）。
 
-## cookie.js
-
-京东自动签到 cookie 环境变量格式化脚本。
-
-电脑登陆京东获取对应的 `pt_key` 和 `pt_pin`，运行脚本生成对应环境变量。
-
 ## deb-init
 
 deb-init 用于自动化安装 debian 系的软件，主要用于 wsl。
@@ -46,10 +40,6 @@ deb-init 用于自动化安装 debian 系的软件，主要用于 wsl。
 ## deb-proxy
 
 用于代理进行安装 debian 系的软件，主要用于 wsl。
-
-## curl-with-proxy
-
-curl-with-proxy 用于配置好代理之后安装的软件。
 
 ## editorconfig eslintrc prettierrc
 
@@ -72,6 +62,10 @@ markdown 格式化文件，放在 `$HOME` 目录下。
 ## my_rc
 
 不同系统下的兼容设置以及个人化的配置。
+
+## myvimrc
+
+配置文件位于 `~/.myvimrc`, 适用于不同系统的 vim/neovim 环境配置。
 
 ## rc 与 rifle
 
@@ -101,13 +95,17 @@ vimrc 无插件，无需安装，适用于快速使用的环境
 
 ## vscode-settings
 
-vscode 配置文件。
+vscode 配置文件，需要安装 vim 插件 [vscodevim](https://github.com/asvetliakov/vscodevim)
 
 ## win_sys_proxy
 
 windows 系统代理设置以及取消脚本。
 
 设置之后可以在 wsl 里面 `ping google.com` 或者打开浏览器测试 google
+
+## xiaohe.reg
+
+小鹤双拼的注册表
 
 ## zshrc
 
