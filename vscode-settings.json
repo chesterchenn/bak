@@ -9,7 +9,10 @@
   },
   "editor.formatOnSave": true,
   "vim.handleKeys": {
-    "<C-p>": false
+    "<C-a>": false,
+    "<C-c>": false,
+    "<C-p>": false,
+    "<C-v>": false
   },
   "vim.normalModeKeyBindings": [
     {
@@ -27,6 +30,14 @@
     {
       "before": ["<leader>", "s", "m"],
       "commands": [":marks"]
+    },
+    {
+      "before": ["<leader>", "f", "g"],
+      "commands": ["workbench.view.search"]
+    },
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.action.quickOpen"]
     }
   ],
   "vim.visualModeKeyBindings": [
