@@ -11,8 +11,7 @@
   "vim.handleKeys": {
     "<C-a>": false,
     "<C-c>": false,
-    "<C-p>": false,
-    "<C-v>": false
+    "<C-p>": false
   },
   "vim.normalModeKeyBindings": [
     {
