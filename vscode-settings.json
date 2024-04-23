@@ -48,5 +48,6 @@
   "vim.autoSwitchInputMethod.enable": true,
   "vim.autoSwitchInputMethod.defaultIM": "1033",
   "vim.autoSwitchInputMethod.obtainIMCmd": "D:\\im-select\\im-select.exe",
-  "vim.autoSwitchInputMethod.switchIMCmd": "D:\\im-select\\im-select.exe {im}"
+  "vim.autoSwitchInputMethod.switchIMCmd": "D:\\im-select\\im-select.exe {im}",
+  "vim.timeout": 3000
 }
