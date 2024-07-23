@@ -18,6 +18,7 @@
 - [vscode-settings](#vscode-settings)
 - [zshrc](#zshrc)
 - [Windows](#windows)
+  - [wechats](#wechats)
   - [win_sys_proxy](#win_sys_proxy)
   - [xiaohe.reg](#xiaohereg)
 
@@ -105,6 +106,10 @@ vscode 配置文件，需要安装 vim 插件 [vscodevim](https://github.com/asv
 ## Windows
 
 Windows 系统下的配置
+
+### wechats
+
+快速双开微信的脚本
 
 ### win_sys_proxy
 
