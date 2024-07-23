@@ -16,9 +16,10 @@
 - [tmux](#tmux)
 - [vimrc](#vimrc)
 - [vscode-settings](#vscode-settings)
-- [win_sys_proxy](#win_sys_proxy)
-- [xiaohe.reg](#xiaohereg)
 - [zshrc](#zshrc)
+- [Windows](#windows)
+  - [win_sys_proxy](#win_sys_proxy)
+  - [xiaohe.reg](#xiaohereg)
 
 <!-- vim-markdown-toc -->
 
@@ -97,16 +98,20 @@ vimrc 无插件，无需安装，适用于快速使用的环境
 
 vscode 配置文件，需要安装 vim 插件 [vscodevim](https://github.com/asvetliakov/vscodevim)
 
-## win_sys_proxy
+## zshrc
+
+配合 [oh my zsh](https://github.com/ohmyzsh/ohmyzsh) 使用
+
+## Windows
+
+Windows 系统下的配置
+
+### win_sys_proxy
 
 windows 系统代理设置以及取消脚本。
 
 设置之后可以在 wsl 里面 `ping google.com` 或者打开浏览器测试 google
 
-## xiaohe.reg
+### xiaohe.reg
 
 小鹤双拼的注册表
-
-## zshrc
-
-配合 [oh my zsh](https://github.com/ohmyzsh/ohmyzsh) 使用
