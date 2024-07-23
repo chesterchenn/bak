@@ -18,6 +18,7 @@
 - [vscode-settings](#vscode-settings)
 - [zshrc](#zshrc)
 - [Windows](#windows)
+  - [input.ahk](#inputahk)
   - [wechats](#wechats)
   - [win_sys_proxy](#win_sys_proxy)
   - [xiaohe.reg](#xiaohereg)
@@ -106,6 +107,17 @@ vscode 配置文件，需要安装 vim 插件 [vscodevim](https://github.com/asv
 ## Windows
 
 Windows 系统下的配置
+
+### input.ahk
+
+AutoHotKey 脚本，使用前请安装 [AutoHotKey](https://www.autohotkey.com/)
+
+需要开机启动将脚本放置在 `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup` 目录下
+
+主要的作用：
+
+1. 禁用微软拼音的英文输入
+2. 使用 Ctrl + Space 进行中英文切换
 
 ### wechats
 
