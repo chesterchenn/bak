@@ -6,7 +6,7 @@
 - [coc-settings](#coc-settings)
 - [deb-init](#deb-init)
 - [deb-proxy](#deb-proxy)
-- [editorconfig eslintrc prettierrc](#editorconfig-eslintrc-prettierrc)
+- [prettierrc](#prettierrc)
 - [foxyproxy](#foxyproxy)
 - [init.vim](#initvim)
 - [markdownlintrc](#markdownlintrc)
@@ -45,7 +45,7 @@ deb-init 用于自动化安装 debian 系的软件，主要用于 wsl。
 
 用于代理进行安装 debian 系的软件，主要用于 wsl。
 
-## editorconfig eslintrc prettierrc
+## prettierrc
 
 前端项目代码规范。
 
