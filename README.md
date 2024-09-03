@@ -7,6 +7,7 @@
 - [deb-init](#deb-init)
 - [deb-proxy](#deb-proxy)
 - [editorconfig eslintrc prettierrc](#editorconfig-eslintrc-prettierrc)
+- [foxyproxy](#foxyproxy)
 - [init.vim](#initvim)
 - [markdownlintrc](#markdownlintrc)
 - [my_rc](#my_rc)
@@ -47,6 +48,10 @@ deb-init 用于自动化安装 debian 系的软件，主要用于 wsl。
 ## editorconfig eslintrc prettierrc
 
 前端项目代码规范。
+
+## foxyproxy
+
+用于格式化火狐插件 FoxyProxy
 
 ## init.vim
 
