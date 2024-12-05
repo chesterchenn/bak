@@ -1,0 +1,171 @@
+{
+  "mode": "pattern",
+  "sync": false,
+  "autoBackup": false,
+  "passthrough": "",
+  "theme": "",
+  "container": {
+    "incognito": "",
+    "container-1": "",
+    "container-2": "",
+    "container-3": "",
+    "container-4": ""
+  },
+  "commands": {
+    "setProxy": "",
+    "setTabProxy": "",
+    "quickAdd": ""
+  },
+  "data": [
+    {
+      "active": true,
+      "title": "Proxy",
+      "type": "socks5",
+      "hostname": "127.0.0.1",
+      "port": "7891",
+      "username": "",
+      "password": "",
+      "cc": "",
+      "city": "",
+      "color": "#3584e4",
+      "pac": "",
+      "pacString": "",
+      "proxyDNS": true,
+      "include": [
+        {
+          "type": "regex",
+          "title": "facebook",
+          "pattern": ".*facebook\\.com",
+          "active": true
+        },
+        {
+          "type": "regex",
+          "title": "github",
+          "pattern": ".*github\\.com",
+          "active": true
+        },
+        {
+          "type": "regex",
+          "title": "githubassets",
+          "pattern": ".*githubassets\\.com",
+          "active": true
+        },
+        {
+          "type": "regex",
+          "title": "githubusercontent",
+          "pattern": ".*githubusercontent\\.com",
+          "active": true
+        },
+        {
+          "type": "regex",
+          "title": "google",
+          "pattern": ".*google\\.com",
+          "active": true
+        },
+        {
+          "type": "regex",
+          "title": "googleapis",
+          "pattern": ".*googleapis\\.com",
+          "active": true
+        },
+        {
+          "type": "regex",
+          "title": "googleusercontent",
+          "pattern": ".*googleusercontent\\.com",
+          "active": true
+        },
+        {
+          "type": "regex",
+          "title": "googlevideo",
+          "pattern": ".*googlevideo\\.com",
+          "active": true
+        },
+        {
+          "type": "regex",
+          "title": "gravatar",
+          "pattern": ".*gravatar\\.com",
+          "active": true
+        },
+        {
+          "type": "regex",
+          "title": "medium",
+          "pattern": ".*medium\\.com",
+          "active": true
+        },
+        {
+          "type": "regex",
+          "title": "notion",
+          "pattern": ".*notion\\.so",
+          "active": true
+        },
+        {
+          "type": "regex",
+          "title": "reddit",
+          "pattern": ".*reddit\\.com",
+          "active": true
+        },
+        {
+          "type": "regex",
+          "title": "stackoverflow.com",
+          "pattern": ".*stackoverflow\\.com",
+          "active": true
+        },
+        {
+          "type": "regex",
+          "title": "supercell",
+          "pattern": ".*supercell\\.com",
+          "active": true
+        },
+        {
+          "type": "regex",
+          "title": "twing",
+          "pattern": ".*twimg\\.com",
+          "active": true
+        },
+        {
+          "type": "regex",
+          "title": "twitter",
+          "pattern": ".*twitter\\.com",
+          "active": true
+        },
+        {
+          "type": "regex",
+          "title": "wikimedia",
+          "pattern": ".*wikimedia\\.org",
+          "active": true
+        },
+        {
+          "type": "regex",
+          "title": "wikipedia",
+          "pattern": ".*wikipedia\\.org",
+          "active": true
+        },
+        {
+          "type": "regex",
+          "title": "x",
+          "pattern": "^https://x\\.com",
+          "active": true
+        },
+        {
+          "type": "regex",
+          "title": "x",
+          "pattern": "https://api.x.com",
+          "active": true
+        },
+        {
+          "type": "regex",
+          "title": "youtube",
+          "pattern": ".*youtube\\.com",
+          "active": true
+        },
+        {
+          "type": "regex",
+          "title": "ytimg",
+          "pattern": ".*ytimg\\.com",
+          "active": true
+        }
+      ],
+      "exclude": []
+    }
+  ]
+}
