@@ -46,6 +46,12 @@
         },
         {
           "type": "regex",
+          "title": "github.io",
+          "pattern": ".*github\\.io",
+          "active": true
+        },
+        {
+          "type": "regex",
           "title": "githubassets",
           "pattern": ".*githubassets\\.com",
           "active": true
@@ -126,6 +132,12 @@
           "type": "regex",
           "title": "twitter",
           "pattern": ".*twitter\\.com",
+          "active": true
+        },
+        {
+          "type": "regex",
+          "title": "v2ex",
+          "pattern": ".*v2ex\\.com",
           "active": true
         },
         {
