@@ -112,6 +112,12 @@
         },
         {
           "type": "regex",
+          "title": "redditstatic",
+          "pattern": ".*redditstatic\\.com",
+          "active": true
+        },
+        {
+          "type": "regex",
           "title": "stackoverflow.com",
           "pattern": ".*stackoverflow\\.com",
           "active": true
