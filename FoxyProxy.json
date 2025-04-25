@@ -4,17 +4,12 @@
   "autoBackup": false,
   "passthrough": "",
   "theme": "",
-  "container": {
-    "incognito": "",
-    "container-1": "",
-    "container-2": "",
-    "container-3": "",
-    "container-4": ""
-  },
+  "container": {},
   "commands": {
     "setProxy": "",
     "setTabProxy": "",
-    "quickAdd": ""
+    "includeHost": "",
+    "excludeHost": ""
   },
   "data": [
     {
@@ -32,6 +27,12 @@
       "pacString": "",
       "proxyDNS": true,
       "include": [
+        {
+          "type": "regex",
+          "title": "android",
+          "pattern": ".*android\\.com",
+          "active": true
+        },
         {
           "type": "regex",
           "title": "facebook",
@@ -183,7 +184,8 @@
           "active": true
         }
       ],
-      "exclude": []
+      "exclude": [],
+      "tabProxy": []
     }
   ]
 }
