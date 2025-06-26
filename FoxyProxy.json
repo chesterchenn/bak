@@ -77,6 +77,12 @@
         },
         {
           "type": "regex",
+          "title": "googledev",
+          "pattern": ".*google\\.dev",
+          "active": true
+        },
+        {
+          "type": "regex",
           "title": "googleusercontent",
           "pattern": ".*googleusercontent\\.com",
           "active": true
