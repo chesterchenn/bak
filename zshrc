@@ -56,8 +56,8 @@ alias ccb="cd $HOME/Code/blog"
 alias coc="cd $HOME/Code/coc"
 
 # alias quick start server
-alias blog="cd $HOME/Code/blog; bash ./start.sh"
-alias stopblog="cd $HOME/Code/blog; bash ./stop.sh"
+alias blog="cd $HOME/Code/blog; bash ./script/start.sh"
+alias stopblog="cd $HOME/Code/blog; bash ./script/stop.sh"
 
 # alias file
 export OH_MY_ZSH="$HOME/.oh-my-zsh"
@@ -110,3 +110,15 @@ alias tkp='tmux kill-pane -t'
 
 # 查询 IPv4 地址
 alias ip4="dig +short myip.opendns.com @resolver1.opendns.com"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# bun completions
+[ -s "/home/chen/.bun/_bun" ] && source "/home/chen/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
