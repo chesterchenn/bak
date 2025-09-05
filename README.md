@@ -12,7 +12,6 @@
 - [markdownlintrc](#markdownlintrc)
 - [my_rc](#my_rc)
 - [myvimrc](#myvimrc)
-- [rc 与 rifle](#rc-与-rifle)
 - [retore](#retore)
 - [tmux](#tmux)
 - [vimrc](#vimrc)
@@ -74,10 +73,6 @@ markdown 格式化文件，放在 `$HOME` 目录下。
 ## myvimrc
 
 配置文件位于 `~/.myvimrc`, 适用于不同系统的 vim/neovim 环境配置。
-
-## rc 与 rifle
-
-ranger 的配置文件，放在 ~/.config/ranger 目录下
 
 ## retore
 
