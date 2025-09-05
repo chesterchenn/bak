@@ -14,6 +14,15 @@ else
   echo "vim-plug 安装结束"
 fi
 
+# 安装 Tmux 插件管理器
+tpmDir=$HOME/.tmux/plugins/tpm
+echo "安装 Tmux 插件管理器"
+if [ -e $tpmDir ]; then
+  echo "Tmux 插件管理器已存在"
+else
+  $proxy git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+fi
+
 # 安装 node 版本管理器
 echo "安装 node 版本管理器 n"
 if [ -e ~/n ]; then
@@ -25,7 +34,7 @@ else
   # take ownership of Node.js install destination folders
   sudo chown -R $(whoami) /usr/local/bin /usr/local/lib /usr/local/include /usr/local/share
   # download n
-  $proxy curl -L https://raw.githubusercontent.com/tj/n/master/bin/n -o ~/n
+  $proxy curl -fsSL -o /usr/local/bin/n https://raw.githubusercontent.com/tj/n/master/bin/n
   bash n lts
   echo "n 和 node 安装成功"
 fi

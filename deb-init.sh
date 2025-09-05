@@ -10,7 +10,7 @@ else
 fi
 
 # 添加 neovim 非稳定版
-sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo add-apt-repository ppa:neovim-ppa/stable
 
 # 更新包列表
 echo "更新包列表"
@@ -22,7 +22,7 @@ sudo apt upgrade -y
 
 # 用于安装 debian 系的软件
 echo "开始安装软件"
-sudo apt install -y git proxychains4 zsh neofetch ranger jq autossh xclip ripgrep neovim python3-pip
+sudo apt install -y git proxychains4 zsh neofetch jq autossh xclip ripgrep neovim python3-pip
 echo "安装软件结束\n"
 
 # 更新 shell
