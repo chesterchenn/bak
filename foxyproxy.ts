@@ -35,7 +35,7 @@ interface Include {
 
 function main() {
   fs.readdirSync('./').forEach((file) => {
-    if (!file.startsWith('FoxyProxy_')) return;
+    if (!file.startsWith('FoxyProxy.json')) return;
     const content = fs.readFileSync(file, 'utf8');
     const json: RootObject = JSON.parse(content);
 

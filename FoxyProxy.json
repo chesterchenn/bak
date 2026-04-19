@@ -35,6 +35,24 @@
         },
         {
           "type": "regex",
+          "title": "claude",
+          "pattern": ".*claude\\.com",
+          "active": true
+        },
+        {
+          "type": "regex",
+          "title": "claude",
+          "pattern": ".*claude\\.ai",
+          "active": true
+        },
+        {
+          "type": "regex",
+          "title": "claude",
+          "pattern": ".*anthropic\\.com",
+          "active": true
+        },
+        {
+          "type": "regex",
           "title": "facebook",
           "pattern": ".*facebook\\.com",
           "active": true
