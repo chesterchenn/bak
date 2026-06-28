@@ -1,9 +1,6 @@
 # 个人备份
 
-<!-- vim-markdown-toc GFM -->
-
 - [测试颜色](#测试颜色)
-- [coc-settings](#coc-settings)
 - [deb-init](#deb-init)
 - [deb-proxy](#deb-proxy)
 - [prettierrc](#prettierrc)
@@ -11,7 +8,7 @@
 - [init.vim](#initvim)
 - [markdownlintrc](#markdownlintrc)
 - [myzshrc](#myzshrc)
-- [myvimrc](#myvimrc)
+- [nvim](#nvim)
 - [tmux](#tmux)
 - [vimrc](#vimrc)
 - [vscode-settings](#vscode-settings)
@@ -22,18 +19,9 @@
   - [win_sys_proxy](#win_sys_proxy)
   - [xiaohe.reg](#xiaohereg)
 
-<!-- vim-markdown-toc -->
-
 ## 测试颜色
 
-```sh
-curl -s https://gist.githubusercontent.com/lifepillar/09a44b8cf0f9397465614e622979107f/raw/24-bit-color.sh >24-bit-color.sh
-bash 24-bit-color.sh
-```
-
-## coc-settings
-
-vim coc 插件的配置 coc-settings.json，需要安装 coc-json，一般放在 .vim（neovim 放在 ~/.config/nvim）。
+测试终端颜色，运行 `24-bit-color.sh`
 
 ## deb-init
 
@@ -51,16 +39,6 @@ deb-init 用于自动化安装 debian 系的软件，主要用于 wsl。
 
 用于格式化火狐插件 FoxyProxy
 
-## init.vim
-
-neovim 的配置文件，放在 ~/.config/nvim 目录下
-
-使用 vim-plug 安装插件，请先安装 [vim-plug](https://github.com/junegunn/vim-plug)，位于 $HOME/.local/share/nvim/site/autoload/plug.vim
-
-- 系统需要安装剪切板工具 xclip
-- telescope.nvim 需要安装 [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep)
-- rnvimr 需要安装 [Pynvim](https://github.com/neovim/pynvim)
-
 ## markdownlintrc
 
 markdown 格式化文件，放在 `$HOME` 目录下。
@@ -69,9 +47,9 @@ markdown 格式化文件，放在 `$HOME` 目录下。
 
 对zshrc配置的补充，针对不同系统下的兼容设置以及个人化的配置。
 
-## myvimrc
+## nvim
 
-配置文件位于 `~/.myvimrc`, 适用于不同系统的 vim/neovim 环境配置。
+neovim 的配置文件夹
 
 ## tmux
 
