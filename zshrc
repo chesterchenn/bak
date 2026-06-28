@@ -81,7 +81,6 @@ if [ -f ~/.my_rc ]; then
   source ~/.my_rc
 fi
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.local/bin:$PATH"
 
 # 启用 oh-my-zsh
 source $ZSH/oh-my-zsh.sh
@@ -107,18 +106,4 @@ alias slp="S;klp;lp;tlp"
 
 # tmux 快捷命令
 alias tkp='tmux kill-pane -t'
-
-# 查询 IPv4 地址
-alias ip4="dig +short myip.opendns.com @resolver1.opendns.com"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-# bun completions
-[ -s "/home/chen/.bun/_bun" ] && source "/home/chen/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
 

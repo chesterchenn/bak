@@ -10,9 +10,8 @@
 - [foxyproxy](#foxyproxy)
 - [init.vim](#initvim)
 - [markdownlintrc](#markdownlintrc)
-- [my_rc](#my_rc)
+- [myzshrc](#myzshrc)
 - [myvimrc](#myvimrc)
-- [retore](#retore)
 - [tmux](#tmux)
 - [vimrc](#vimrc)
 - [vscode-settings](#vscode-settings)
@@ -66,21 +65,22 @@ neovim 的配置文件，放在 ~/.config/nvim 目录下
 
 markdown 格式化文件，放在 `$HOME` 目录下。
 
-## my_rc
+## myzshrc
 
-不同系统下的兼容设置以及个人化的配置。
+对zshrc配置的补充，针对不同系统下的兼容设置以及个人化的配置。
 
 ## myvimrc
 
 配置文件位于 `~/.myvimrc`, 适用于不同系统的 vim/neovim 环境配置。
 
-## retore
-
-restore 进行配置文件同步
-
 ## tmux
 
-tmux.conf 配置文件
+tmux.conf 配置文件，需要先安装 tmux
+
+```shell
+sudo pacman -Syu tmux
+sudo apt install tmux
+```
 
 tmux 插件管理：[tpm](https://github.com/tmux-plugins/tpm)
 
@@ -92,7 +92,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 ## vimrc
 
-配置文件位于 `~/.vimrc`
+配置文件位于 `~/.vimrc`,新版 Vim (9.1.0327+) 也开始支持将配置放在 ~/.config/vim/ 目录下
 
 vimrc 无插件，无需安装，适用于快速使用的环境
 

@@ -10,7 +10,7 @@
 
 # 用 open 别名打开本地管理器
 # Arch Linux
-# alias open='xdg-open'
+alias open='xdg-open'
 # Windows WSL
 # alias open='explorer.exe'
 
@@ -21,7 +21,3 @@
 # Ubuntu
 # export JAVA_HOME='/usr/lib/jvm/java-11-openjdk-amd64'
 # export PATH=$JAVA_HOME/bin:$PATH
-
-# Update Arch Linux and yay
-# alias P="sudo pacman -Syu"
-# alias Y="yay -Syu"
