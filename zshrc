@@ -35,15 +35,10 @@ unsetopt beep
 alias ls="ls --color=auto"
 alias ll="ls -al"
 alias grep="grep --color=auto"
-alias puml="plantuml -charset UTF-8"
-alias pumlsvg="plantuml -charset UTF-8 -svg"
 
 alias e="exit"
 alias pn="pnpm"
-alias so="source"
 alias S="source $HOME/.zshrc"
-alias weather="curl wttr.in/guangzhou"
-alias ys="yarn run start"
 
 # alias quick jump
 alias ch="cd $HOME"
@@ -68,19 +63,11 @@ export initvim="$HOME/.config/nvim/init.vim"
 alias pc="proxychains4"
 # need to install neofetch, see https://github.com/dylanaraps/neofetch
 alias neo="neofetch"
-# need to install ranger, see https://github.com/ranger/ranger
-alias R="ranger"
-alias py="python3"
-
-# Install Ruby Gems
-export GEM_HOME="$HOME/.local/share/gem"
-export PATH="$GEM_HOME/bin:$PATH"
 
 # load custom config
-if [ -f ~/.my_rc ]; then
-  source ~/.my_rc
+if [ -f ~/.myzshrc ]; then
+  source ~/.myzshrc
 fi
-
 
 # 启用 oh-my-zsh
 source $ZSH/oh-my-zsh.sh
